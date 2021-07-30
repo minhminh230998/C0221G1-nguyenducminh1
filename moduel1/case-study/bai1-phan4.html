@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function text() {
+        let nhap=prompt("Nhập vào:")
+        nhap= nhap.toLowerCase();
+        let b=[];
+        b=nhap.split(" ");
+        let result=[];
+        let index='';
+        for (let i = 0; i < b.length; i++) {
+                b[i] = b[i].charAt(0).toUpperCase() + b[i].slice(1);
+            if(b[i].length>0){
+                result.push(b[i]);
+            }
+        }
+       index=result.join(' ')
+        alert(index);
+        let max=b[0].length;
+        let d='';
+        for (let i = 1; i < b.length; i++) {
+            if (max==b[0].length){
+                d=b[0];
+            }
+            if(b[i].length>max){
+                max=b[i].length;
+                d=b[i];
+            }
+        }
+
+        alert(d);
+
+    }
+
+ text()
+
+
+</script>
+</body>
+</html>

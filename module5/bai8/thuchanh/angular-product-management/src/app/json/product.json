@@ -1,0 +1,46 @@
+{
+  "product": [
+    {
+      "name": "1",
+      "id": 1,
+      "price": 1,
+      "description": "1",
+      "category": {
+        "id": 5,
+        "name": "IPhone 11 Pro"
+      }
+    },
+    {
+      "name": "1",
+      "price": 11111,
+      "description": "11111",
+      "category": {
+        "id": 3,
+        "name": "IPhone X"
+      },
+      "id": 2
+    }
+  ],
+  "Category": [
+    {
+      "id": 1,
+      "name": "IPhone 12"
+    },
+    {
+      "id": 2,
+      "name": "IPhone 11"
+    },
+    {
+      "id": 3,
+      "name": "IPhone X"
+    },
+    {
+      "id": 4,
+      "name": "IPhone 8"
+    },
+    {
+      "id": 5,
+      "name": "IPhone 11 Pro"
+    }
+  ]
+}

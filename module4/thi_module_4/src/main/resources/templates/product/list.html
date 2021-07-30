@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Title</title>
+    <style>
+        h3 {
+            background-color: blue;
+            color: white;
+            padding: 10px 0 10px 20px;
+        }
+
+        footer {
+            margin: 10px 0;
+        }
+
+        #product {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #product td, #product th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #product tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #product tr:hover {
+            background-color: #ddd;
+        }
+
+        #product th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        input[type=text], input[type=email] {
+            width: 100%;
+            padding: 12px 0px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 300px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        #form {
+            width: 500px;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .notify span {
+            font-size: 15px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<h3>Product</h3>
+<p>
+    <a th:href="@{/product/create}">
+        Add new Product
+    </a>
+</p>
+<div>
+    <form method="get" th:action="@{/product}">
+        <input type="text" name="name"  placeholder="Search ...">
+        <input type="text" name="price"  placeholder="Search ...">
+        <button>Search</button>
+    </form>
+
+</div>
+<table id="product">
+    <tr>
+        <th>STT</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Describe</th>
+        <th>Producer</th>
+        <th>Edit</th>
+        <th>Delete</th>
+        <th>View</th>
+    </tr>
+
+
+    <tr th:each="product,rowStat : ${products}">
+        <td th:text="${rowStat.index+1}"></td>
+        <td th:text="${product.getName()}"></td>
+        <td th:text="${product.getPrice()}"></td>
+        <td th:text="${product.getDescribe()}"></td>
+       <td th:text="${product.getManufacturer().getName()}"></td>
+
+        <td><a th:href="@{/product/update(id=${product.getId()})}"><button type="button" class="btn btn-warning">Edit</button></a></td>
+        <td><a th:href="@{/product/delete(id=${product.getId()})}"><button type="button" class="btn btn-danger">Delete</button></a></td>
+        <td><a th:href="@{/product/view(id=${product.getId()})}"><button type="button" class="btn btn-info">view</button></a></td>
+
+    </tr>
+
+</table>
+<a th:href="@{/product(page=${products.number - 1},name=${names},price=${prices})}" th:if="${products.hasPrevious()}">Previous</a>
+<span th:text="${products.number + 1}"></span>/<span th:text="${products.totalPages}"></span>
+<a th:href="@{/product(page=${products.number + 1},name=${names},price=${prices})}" th:if="${products.hasNext()}">Next</a>
+</body>
+</html>

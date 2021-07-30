@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="500px" height="500px" style="border:1px solid green;solid-color: green"></canvas>
+<script>
+
+    class VeHinhChuNhat {
+        constructor(dai, rong) {
+            this.dai = dai;
+            this.rong = rong;
+        };
+        setDai(dai){
+            this.dai=dai;
+        }
+        setRong(rong){
+            this.rong=rong;
+        }
+        getDai(){
+            return this.dai;
+        }
+        getRong(){
+            return this.rong;
+        }
+        getArea(){
+            return this.dai*this.rong;
+        };
+        getPerimeter(){
+            return (this.dai+this.rong)*2;
+        };
+
+        draw(x, y) {
+            let ctx = document.getElementById("myCanvas").getContext("2d");
+            ctx.fillStyle="#d3538b"
+            ctx.fillRect(100, 300,this.dai,this.rong);
+        }
+    }
+
+    let creart = new VeHinhChuNhat();
+    creart.setDai(parseInt(prompt("Nhập chiều dài:")));
+    creart.setRong(parseInt(prompt("Nhập chiều rộng:")));
+    dai=creart.getDai();
+    rong=creart.getRong();
+    creart.draw(dai,rong);
+    let dienTich=creart.getArea();
+    alert(dienTich)
+    let chuVi=creart.getPerimeter();
+    alert(chuVi);
+
+</script>
+</body>
+</html>

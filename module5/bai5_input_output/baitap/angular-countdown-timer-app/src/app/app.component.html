@@ -1,0 +1,8 @@
+<input type="number" [(ngModel)]="number" name="seconds" >
+<app-countdown-timer (finish)="newCountdown($event)" (se)="abc($event)" [seconds]="number" ></app-countdown-timer>
+<div class="timer">
+  <span class="timer-text">{{ remainingTimes }}</span>
+  <p>{{ a }}</p>
+
+</div>
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let chieuDai = parseInt(prompt("nhập chiều dài:"));
+    let chieuRong = parseInt(prompt("Nhập chiều rộng:"));
+    for (let i = 1; i <= chieuDai; i++) {
+        for (let j = 1; j <= chieuRong; j++) {
+            if (chieuDai < chieuRong) {
+                document.write("không thể hiển thị")
+            } else {
+                if (i == 1 || j == 1 || i == chieuDai || j == chieuRong) {
+                    document.write(" * ");
+                } else {
+                    document.write("&nbsp;&nbsp")
+                }
+            }
+        }
+        document.write("<br>")
+    }
+</script>
+</body>
+</html>

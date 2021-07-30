@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num=prompt("nhập vào chuổi");
+     arr1=num.split("");
+    let  result="";
+    let arr2=["0","1","2","3","4","5","6","7","8","9"];
+    let arr3=["không","một","hai","ba","bốn","năm","sáu","bảy","tám","chín"];
+    for (let i = 0; i < arr1.length; i++) {
+        let index=arr2.indexOf(arr1[i]);
+        if(index!==-1){
+            result+=arr3[index]+" ";
+        }
+
+    }
+    alert(result +" ");
+
+
+
+
+
+</script>
+</body>
+</html>

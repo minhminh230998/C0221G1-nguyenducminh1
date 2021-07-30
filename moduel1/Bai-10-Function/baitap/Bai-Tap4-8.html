@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function daoNguocMangSoNguyen(array) {
+        return array.reverse();
+    }
+    let arr = new Array();
+    let so = (prompt("Nhập số phần tử mảng:"));
+    for (let i = 0; i < so ; i++) {
+        arr[i]=parseInt(prompt("Nhập vào mảng"))
+    }
+    document.write(daoNguocMangSoNguyen(arr));
+</script>
+</body>
+</html>

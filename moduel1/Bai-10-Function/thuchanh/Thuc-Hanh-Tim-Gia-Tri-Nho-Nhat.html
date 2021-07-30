@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function minarr(arr) {
+        let min = arr[0];
+        if (arr.length == 0) {
+            return "hàm rổng"
+        }
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+        return min;
+    }
+
+    let arr = new Array(1,2,3,4,-1);
+    let min = minarr(arr);
+    alert(min);
+    arr = new Array(1,2,3,4,-1,-5);
+     min = minarr(arr);
+    alert(min);
+
+
+</script>
+</body>
+</html>

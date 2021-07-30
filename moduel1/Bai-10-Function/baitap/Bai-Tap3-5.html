@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let star1 = new Array('Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus');
+    let star2 = new Array('UrsaMinor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'UrsaMajor', 'leo');
+    let star = prompt("Nhập vào tên ngôi sao:");
+
+    function kiemTraTenNgoiSao(s1, s2) {
+        for (let i = 0; i < star1.length; i++) {
+            if (s1[i] == star) {
+                return s2[i];
+            }
+        }
+        return "không tìm thấy"
+    }
+
+    alert(kiemTraTenNgoiSao(star1, star2));//khúc này là nó hiểu truyền thàm số của s1=star1 ; s2 = star2
+
+</script>
+</body>
+</html>

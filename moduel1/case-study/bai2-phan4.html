@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    let text=prompt("Nhập vào:");
+    let arrtext = text.split('')
+    let result = [];
+    for (let i = 0; i < arrtext.length; i++) {
+        if (result.indexOf(arrtext[i])==-1) {
+            result.push(arrtext[i]);
+        }
+    }
+    alert(result.length)
+
+
+
+</script>
+</body>
+</html>

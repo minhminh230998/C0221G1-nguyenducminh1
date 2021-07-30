@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý đồ uống</title>
+</head>
+<body>
+<p id="listDoUong"></p>
+<input type="button" onclick="tongTien()" value="Tổng tiền"><span id="xuatTien"></span>
+<script>
+    // let sanPham = ["caffe", "Nước dừa", "Nước cam", "Nước ép cà rốt", "Nước ép cà chua", "Nước lọc"];
+
+    function disPlay(listArr) {
+        let stringTable = '<table border="1" >';
+        stringTable += '<tr>\n' +
+            '        <th>Stt</th>\n' +
+            '        <th>Tên Sản Phẩm</th>\n' +
+            '        <th>Giá</th>\n' +
+            '        <th>Số lượng</th>\n' +
+            '        <th>Thành tiền</th>\n' +
+            '    </tr>'
+        stringTable += ' <tr>\n' +
+            '        <td> 1 </td>\n' +
+            '        <td>Caffe</td>\n' +
+            '        <td><input type="text" value="15000" disabled id="caffe"></td>\n' +
+            '        <td><input type="number" placeholder="Nhập vào" id="soLuong" oninput="giaSanPham()"></td>\n' +
+            '        <td><input type="button"  value="Giá tiền"><span id="xuat"></span></td>\n' +
+            '    </tr>'
+        stringTable += ' <tr>\n' +
+            '        <td> 2 </td>\n' +
+            '        <td>Nước dừa</td>\n' +
+            '        <td><input type="text" value="20000" disabled id="nd"></td>\n' +
+            '        <td><input type="number" oninput="giaSanPham()" placeholder="Nhập vào" id="soLuong1"></td>\n' +
+            '        <td><input type="button"  value="Giá tiền"><span id="xuat1"></span></td>\n' +
+            '    </tr>'
+        stringTable += ' <tr>\n' +
+            '        <td> 3 </td>\n' +
+            '        <td>Nươc cam</td>\n' +
+            '        <td><input type="text" value="25000" disabled id="nc"></td>\n' +
+            '        <td><input type="number" oninput="giaSanPham()" placeholder="Nhập vào" id="soLuong2"></td>\n' +
+            '        <td><input type="button" value="Giá tiền"><span id="xuat2"></span></td>\n' +
+            '    </tr>'
+        stringTable += ' <tr>\n' +
+            '        <td> 4 </td>\n' +
+            '        <td>Nước ép cà rốt</td>\n' +
+            '        <td><input type="text" value="25000" disabled id="cr"></td>\n' +
+            '        <td><input type="number" oninput="giaSanPham()" placeholder="Nhập vào" id="soLuong3"></td>\n' +
+            '        <td><input type="button"  value="Giá tiền"><span id="xuat3"></span></td>\n' +
+            '    </tr>'
+        stringTable += ' <tr>\n' +
+            '        <td> 5 </td>\n' +
+            '        <td>Nước ép cà chua </td>\n' +
+            '        <td><input type="text" value="30000" disabled id="cc"></td>\n' +
+            '        <td><input type="number" oninput="giaSanPham()" placeholder="Nhập vào" id="soLuong4"></td>\n' +
+            '        <td><input type="button"  value="Giá tiền"><span id="xuat4"></span></td>\n' +
+            '    </tr>'
+        stringTable += ' <tr>\n' +
+            '        <td> 6 </td>\n' +
+            '        <td>Nước lọc</td>\n' +
+            '        <td><input type="text" value="12000" disabled id="nl"></td>\n' +
+            '        <td><input type="number" oninput="giaSanPham()" placeholder="Nhập vào" id="soLuong5"></td>\n' +
+            '        <td><input type="button" value="Giá tiền"><span id="xuat5"></span></td>\n' +
+            '    </tr>'
+        stringTable += '</table>'
+        document.getElementById("listDoUong").innerHTML = stringTable;
+    }
+
+    disPlay()
+
+    function giaSanPham() {
+
+        let thanhtien = document.getElementById('caffe').value * document.getElementById('soLuong').value;
+        document.getElementById('xuat').innerHTML = thanhtien;
+        let thanhtien1 = document.getElementById('nd').value * document.getElementById('soLuong1').value;
+        document.getElementById('xuat1').innerHTML = thanhtien1;
+        let thanhtien2 = document.getElementById('nc').value * document.getElementById('soLuong2').value;
+        document.getElementById('xuat2').innerHTML = thanhtien2;
+        let thanhtien3 = document.getElementById('cr').value * document.getElementById('soLuong3').value;
+        document.getElementById('xuat3').innerHTML = thanhtien3;
+        let thanhtien4 = document.getElementById('cc').value * document.getElementById('soLuong4').value;
+        document.getElementById('xuat4').innerHTML = thanhtien4;
+        let thanhtien5 = document.getElementById('nl').value * document.getElementById('soLuong5').value;
+        document.getElementById('xuat5').innerHTML = thanhtien5;
+    }
+
+    function tongTien() {
+        let thanhtien = document.getElementById('caffe').value * document.getElementById('soLuong').value;
+        document.getElementById('xuat').innerHTML = thanhtien;
+        let thanhtien1 = document.getElementById('nd').value * document.getElementById('soLuong1').value;
+        document.getElementById('xuat1').innerHTML = thanhtien1;
+        let thanhtien2 = document.getElementById('nc').value * document.getElementById('soLuong2').value;
+        document.getElementById('xuat2').innerHTML = thanhtien2;
+        let thanhtien3 = document.getElementById('cr').value * document.getElementById('soLuong3').value;
+        document.getElementById('xuat3').innerHTML = thanhtien3;
+        let thanhtien4 = document.getElementById('cc').value * document.getElementById('soLuong4').value;
+        document.getElementById('xuat4').innerHTML = thanhtien4;
+        let thanhtien5 = document.getElementById('nl').value * document.getElementById('soLuong5').value;
+        document.getElementById('xuat5').innerHTML = thanhtien5;
+        let ar = [thanhtien, thanhtien1, thanhtien2, thanhtien3, thanhtien4, thanhtien5]
+        let sum = 0;
+        for (let i = 0; i < ar.length; i++) {
+            sum += ar[i];
+        }
+
+        document.getElementById('xuatTien').innerText = sum;
+    }
+
+
+</script>
+</body>
+</html>

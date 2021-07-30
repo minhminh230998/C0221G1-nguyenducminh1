@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h5>Feed</h5>
+<input oninput="nhanKetqua1(this.value)" type="number" placeholder="Nhập vào feed">
+<p>Metes:<span id="ketQuaMetes"></span></p>
+<br>
+<h5>Meter</h5>
+<input oninput="nhanKetqua2(this.value)" type="number" placeholder="Nhập vào metes">
+<p>feed:<span id="ketQuaFeed"></span></p>
+<script>
+    function nhanKetqua1(feed) {
+        feed = parseFloat(feed);
+        document.getElementById('ketQuaMetes').innerHTML = 0.305 * feed;
+    }
+
+    function nhanKetqua2(meter) {
+        meter = parseFloat(meter);
+        document.getElementById("ketQuaFeed").innerHTML = 3.279 * meter;
+    }
+</script>
+</body>
+</html>

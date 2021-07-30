@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class DongVat {
+        constructor(ten, canNang, tocDo) {
+            this.ten = ten;
+            this.canNang = canNang;
+            this.tocDo = tocDo;
+        }
+
+        getten() {
+            return this.ten;
+        }
+
+        getcanNang() {
+            return this.canNang;
+        }
+
+        gettocDo() {
+            return this.tocDo;
+        }
+
+        say() {
+
+        }
+    }
+
+    class Tom extends DongVat {
+        constructor(ten, canNang, tocDo) {
+            super(ten, canNang, tocDo);
+        }
+        getten() {
+            return super.getten();
+        }
+        setten(string){
+            this.ten=string;
+        }
+
+        say() {
+
+        }
+
+        an(chuot) {
+            if (this.tocDo > chuot.tocDo && chuot.trangThai == "song") {
+                this.canNang += chuot.canNang;
+            }
+        }
+    }
+
+    class Jerry extends DongVat {
+        constructor(ten, canNang, tocDo, trangThai) {
+            super(ten, canNang, tocDo);
+            this.trangThai = trangThai;
+        }
+
+        say() {
+        }
+
+        gettrangThai() {
+            return this.trangThai;
+        }
+    }
+
+    let t = new Tom();
+    let jerry = new Jerry("jerry", 5, 9, "song");
+   // tom.an(jerry);
+   // alert(tom.getcanNang());
+    t.setten('abc')
+    alert(t.getten());
+
+</script>
+</body>
+</html>

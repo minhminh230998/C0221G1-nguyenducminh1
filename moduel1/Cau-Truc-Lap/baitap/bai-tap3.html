@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--bai1-->
+<script>
+    for (i = 1; i <= 100; i++) {
+        alert(i);
+    }
+    alert("bạn đã thực hiện xong")
+</script>
+<!--bai2-->
+<script>
+    let nd = prompt("nhâp vào");
+    if (nd > 100) {
+        alert("hạ")
+    } else if (nd < 20) {
+        alert("tăng")
+    } else {
+        alert("bt")
+    }
+</script>
+<!--bài 3--->
+<script>
+    let n1 = 0;
+    let n2 = 1;
+    document.write(n1)
+    document.write("<br>")
+    for (i = 0; i < 20; i++) {
+        document.write(n2);
+        document.write("<br>");
+        let next = n1 + n2;
+        n1 = n2;
+        n2 = next;
+    }
+</script>
+<!--bai4-->
+<script>
+    let n3 = 0;
+    let n4 = 1;
+    for (i = 1; i < 20; i++) {
+        let next1 = n3 + n4;
+        n3 = n4;
+        n4 = next;
+        if (n4 % 5 == 0) {
+            document.write(n4)
+            break;
+        }
+    }
+</script>
+<!--bai5-->
+<script>
+    let a = 0;
+    let b = 1;
+    let tong = 0;
+    for (i = 0; i < 20; i++) {
+        tong = tong + b;
+        let c = a + b;
+        a = b;
+        b = c;
+
+    }
+    alert(tong);
+</script>
+<!--bai6-->
+<script>
+    let nb1 = 7
+    let kq = 0
+    for (i = 0; i < 30; i++) {
+        kq = kq + nb1;
+        nb1 = nb1 + 7;
+    }
+    document.write(kq)
+</script>
+<script>
+    let nb1 = 7;
+    for (i = 0; i < 30; i++) {
+        document.write(nb1);
+        document.write("<br>");
+        nb1 = nb1 + 7;
+    }
+</script>
+<!--bai6 cach2-->
+<script>
+    let dem = 0;
+    let i = 1;
+    let sum = 0;
+    document.write("30 số đầu tiên chia hết cho 7 là : ");
+    while (dem <= 30) {
+        if (i % 7 == 0) {
+            document.write(i + " ");
+            dem++;
+            sum += i;
+        }
+        i++
+    }
+    document.write("</br>");
+    document.write("Tổng 30 số đầu tiên chia hết cho 7: " + sum);
+
+</script>
+<!--bai7-->
+<script>
+    for (i = 1; i <= 100; i++) {
+        let nb2 = i;
+        if (i % 3 == 0) {
+            document.write("fizz");
+            document.write("<br>")
+        } else if (i % 5 == 0) {
+            document.write("buzz");
+            document.write("<br>")
+        } else if (i % 3 == 0 && i % 5 == 0) {
+            document.write("fizzbuzz");
+            document.write("<br>")
+        } else {
+            document.write(nb2);
+            document.write("<br>")
+        }
+    }
+
+</script>
+<!--bai8-->
+</body>
+</html>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ee930037-288f-40e0-9e63-b2c387743482" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../bai_1_tong_quan_spring_MVC/thuc_hanh/ung_dung_quan_li_danh_sach_khách_hang/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_1_tong_quan_spring_MVC/thuc_hanh/ung_dung_quan_li_danh_sach_khách_hang/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_5_thao_tac_voi_csdl_va_orm/thuc_hanh/ung_dung-quan_li_danh_sach_khach_hang/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_5_thao_tac_voi_csdl_va_orm/thuc_hanh/ung_dung-quan_li_danh_sach_khach_hang/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/DemoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/controller/CustomerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/model/entity/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/model/repository/ICustomerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/model/service/ICustomerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/model/service/impl/CustomerServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/create.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/delete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/error.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/DemoApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1uIHyhv1XwMdL3KOSkhaY4FnK24" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../thuchanh/ung_dung_quan_li_khach_hang" />
+    <property name="settings.editor.selected.configurable" value="experimental" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\C0221G1-nguyenducminh1\C0221G1-nguyenducminh\module4\bai_6_jpa\ung_dung_quan_li_khach_hang\src\main\resources\templates" />
+      <recent name="E:\C0221G1-nguyenducminh1\C0221G1-nguyenducminh\module4\bai_6_jpa\ung_dung_quan_li_khach_hang\src\main\resources\teamplates" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.DemoApplication">
+    <configuration name="DemoApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.DemoApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.DemoApplication" />
+      <item itemvalue="Spring Boot.DemoApplication (1)" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ee930037-288f-40e0-9e63-b2c387743482" name="Default Changelist" comment="" />
+      <created>1624346438897</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1624346438897</updated>
+      <workItem from="1624346443684" duration="6702000" />
+      <workItem from="1624353772496" duration="3221000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1624369625416">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1624369625416" />
+    <state x="446" y="39" key="#com.intellij.ide.util.MemberChooser" timestamp="1624347565761">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="446" y="39" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1624347565761" />
+    <state x="421" y="77" key="FileChooserDialogImpl" timestamp="1624369644436">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="77" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1624369644436" />
+    <state width="1227" height="167" key="GridCell.Tab.0.bottom" timestamp="1624353212431">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1227" height="167" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1624353212431" />
+    <state width="1227" height="167" key="GridCell.Tab.0.center" timestamp="1624353212431">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1227" height="167" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1624353212431" />
+    <state width="1227" height="167" key="GridCell.Tab.0.left" timestamp="1624353212431">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1227" height="167" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1624353212431" />
+    <state width="1227" height="167" key="GridCell.Tab.0.right" timestamp="1624353212431">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1227" height="167" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1624353212431" />
+    <state width="1227" height="167" key="GridCell.Tab.1.bottom" timestamp="1624353212431">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1227" height="167" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1624353212431" />
+    <state width="1227" height="167" key="GridCell.Tab.1.center" timestamp="1624353212431">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1227" height="167" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1624353212431" />
+    <state width="1227" height="167" key="GridCell.Tab.1.left" timestamp="1624353212431">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1227" height="167" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1624353212431" />
+    <state width="1227" height="167" key="GridCell.Tab.1.right" timestamp="1624353212431">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1227" height="167" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1624353212431" />
+    <state x="0" y="0" key="new project wizard" timestamp="1624352080916">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="0" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1624352080916" />
+  </component>
+</project>

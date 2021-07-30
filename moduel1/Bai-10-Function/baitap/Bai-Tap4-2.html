@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function circleArea(radius) {
+        let acreage = radius * radius * Math.PI;
+        return acreage;
+    }
+
+    function diameterOfACircle(radius) {
+        let perimeter = 2 * radius * Math.PI;
+        return perimeter;
+    }
+
+    let radius = parseInt(prompt("Nhập vào bán kính hình tròn:"));
+    alert(circleArea(radius));
+    alert(diameterOfACircle(radius));
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--bai1-->
+<script>
+    let color = new Array("Red", "Green", "White", "Black");
+    document.write(color.join("-") + "<br>");
+    document.write("<br>");
+    document.write(color.length);
+    document.write("<br>");
+    document.write(color.valueOf()+"<br>")
+    document.write("<br>");
+    color.push("Blue");
+    document.write(color.join("-"));
+    document.write("<br>");
+    color.pop();
+    document.write(color.length);
+    color.unshift("Blue");
+    document.write("<br>");
+    document.write(color.join());
+    document.write("<br>");
+    document.write(color.sort().join("-"));
+    for (let i=0;i<color.length;i++){
+        document.write(color[i]);
+        document.write("<br>")
+    }
+</script>
+<!--bai2-->
+<script>
+    let num = window.prompt("nhập vào dãy số :")
+    let string = num.toString();
+    let result = [string[0]];
+    for (i = 1; i < string.length; i++) {
+        if (((string[i - 1] % 2 === 0) && (string[i] % 2 === 0)) || ((string[i] % 2 === 0) && (string[i + 1] % 2 == 0))) {
+            result.push("-" + string[i]);
+        } else {
+            result.push(string[i]);
+        }
+    }
+    document.write(result.join(""));
+</script>
+<!--bai3-->
+<script>
+    let text = prompt("nhập vào :");
+    let chuIn = 'QWERTYUIOPASDFGHJKLZXCVBNM';
+    let chuThuong = 'qwertyuiopasdfghjklzxcvbnm';
+    let a = [];
+    for (let i = 0; i < text.length; i++) {
+        if (chuIn.indexOf(text[i] )!== -1) {
+            a.push(text[i].toLowerCase());
+        } else if (chuThuong.indexOf(text[i]) !== -1) {
+            a.push(text[i].toUpperCase());
+        } else {
+            a.push("" + text[i]);
+        }
+    }
+    document.write(a.join(""));
+</script>
+</body>
+</html>

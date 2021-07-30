@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+function commonCharacterCount(text1,text2) {
+    let arr1text1 = text1.split('');
+    let arr2text2 = text2.split('');
+    let dem=0;
+        for (let i = 0; i < arr1text1.length; i++) {
+            if (arr1text1.indexOf(arr2text2[i]) !== -1) {
+                dem++;
+            }
+        }
+
+    return dem;
+}
+let text3="abcdef";
+let text4="abc";
+alert(commonCharacterCount(text3,text4));
+
+</script>
+</body>
+</html>

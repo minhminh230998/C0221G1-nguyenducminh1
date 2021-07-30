@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List student other</title>
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <script src="../static/lib/jquery/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../static/lib/css/bootstrap.css">
+    <script src="../static/lib/js/bootstrap.js"></script>
+</head>
+<style>
+
+
+</style>
+<body>
+<div class="box">
+        <input type="text" id="search">
+        <button onclick="searchName()">Search</button>
+    <i class="fas fa-search"></i>
+</div>
+<div class="container mt-4">
+    <div class="row w-50 mx-auto">
+        <div class="col-lg-12">
+            <h2>List student other</h2>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Content</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Date</th>
+                </tr>
+                </thead>
+                <tbody id="tableBodyStudent">
+                </tbody>
+            </table>
+            <button id="more" onclick="clickMore(search)">Xem thêm</button>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    let page=0;
+    let stt=0;
+    $.ajax({
+
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        type: "GET", //GET, DELETE, PUT...
+        url: "http://localhost:8080/blogs/list/?page="+page,
+        success: function(resultSuccess){
+            console.log("Success");
+            let list=resultSuccess.content
+            let resultHTML = "";
+            for (let i = 0; i < list.length; i++) {
+                resultHTML += "<tr>";
+                resultHTML += "<th scope='row'>" + (i+1) + "</th>";
+                resultHTML += "<td>" + list[i].name + "</td>";
+                resultHTML += "<td>" + list[i].content + "</td>";
+                resultHTML += "<td>" + list[i].category.name + "</td>";
+                resultHTML += "<td>" + list[i].date + "</td>";
+                resultHTML += "</tr>";
+                stt++
+            }
+
+            console.log(resultHTML);
+            // innerHTML
+            $("#tableBodyStudent").html(resultHTML);
+        },
+        error: function(resultError) {
+            console.log("Error: ");
+            console.log(resultError);
+        }
+    });
+    let search="";
+    function clickMore(search) {
+        // search="";
+        page=page+1;
+        $.ajax({
+
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+
+            type: "GET", //GET, DELETE, PUT...
+            url: "http://localhost:8080/blogs/list?page="+page+"&"+"name="+search,
+
+            success: function(resultSuccess){
+                console.log("Success");
+                let list=resultSuccess.content
+                let resultHTML = "";
+                for (let i = 0; i < list.length; i++) {
+                    resultHTML += "<tr>";
+                    resultHTML += "<th scope='row'>" + (stt) + "</th>";
+                    resultHTML += "<td>" + list[i].name + "</td>";
+                    resultHTML += "<td>" + list[i].content + "</td>";
+                    resultHTML += "<td>" + list[i].category.name + "</td>";
+                    resultHTML += "<td>" + list[i].date + "</td>";
+                    resultHTML += "</tr>";
+                    stt++
+                }
+                console.log(list)
+                console.log("abc")
+                let totalpage=resultSuccess.totalPage
+                if(page==totalpage){
+                    $("#more").css("display","none")
+                    alert("")
+                }
+
+                console.log(resultHTML);
+                // innerHTML
+                $("#tableBodyStudent").html(resultHTML);
+            },
+            error: function(resultError) {
+                console.log("Error: ");
+                console.log(resultError);
+            }
+        });
+
+    }
+    function searchName() {
+        page=0
+        // page=page+1;
+       // let  page1=0
+         search=$("#search").val()
+        alert(search);
+        // alert(search)
+        $.ajax({
+
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+
+            type: "GET", //GET, DELETE, PUT...
+            url: "http://localhost:8080/blogs/list?page="+page+"&"+"name="+search,
+
+            success: function(resultSuccess){
+                console.log("Success");
+                let list=resultSuccess.content
+                let resultHTML = "";
+                for (let i = 0; i < list.length; i++) {
+                    resultHTML += "<tr>";
+                    resultHTML += "<th scope='row'>" + i + "</th>";
+                    resultHTML += "<td>" + list[i].name + "</td>";
+                    resultHTML += "<td>" + list[i].content + "</td>";
+                    resultHTML += "<td>" + list[i].category.name + "</td>";
+                    resultHTML += "<td>" + list[i].date + "</td>";
+                    resultHTML += "</tr>";
+                    stt++
+                }
+                console.log(list)
+
+                // if(list.length){
+                //     $("#more").css("display","none")
+                //     alert("")
+                // }
+
+                console.log(resultHTML);
+
+                // innerHTML
+                $("#tableBodyStudent").html(resultHTML);
+            },
+
+            error: function(resultError) {
+                console.log("Error: ");
+                console.log(resultError);
+            }
+        });
+
+        // clickMore(search)
+
+
+    }
+</script>
+
+</body>
+</html>

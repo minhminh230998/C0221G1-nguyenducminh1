@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class ConNguoi {
+        constructor(ten ,gioiTinh, canNang) {
+            this.ten=ten;
+            this.goiTinh = gioiTinh;
+            this.canNang = canNang;
+        }
+        getten(ten){
+            return this.ten=ten;
+        }
+        getgioiTinh(gioiTinh){
+            return this.goiTinh = gioiTinh;
+        }
+        getcanNang(canNang){
+            return  this.canNang = canNang;
+        }
+        an(tao) {
+            if(tao.canNang>0){
+              this.canNang++;
+              tao.canNang--;
+
+            }
+        }
+        say(){
+
+        }
+    }
+
+   class Tao{
+        constructor(canNang) {
+            this.canNang=canNang;
+        }
+        getcanNang(canNang){
+            this.canNang=canNang;
+        }
+   }
+
+   let Adam=new ConNguoi("Adam","nam",75);
+   let Eval=new ConNguoi("Eval","nữ",75);
+   let tao=new Tao(10);
+    alert(Adam.ten);
+   alert("ban đầu Adam"+Adam.canNang+"dv")
+    alert("ban đầu Táo"+tao.canNang+"dv")
+   Adam.an(tao);
+   alert("Adam ăn táo")
+   alert("adam lên "+Adam.canNang+"dv");
+   alert("táo còn"+tao.canNang+"dv");
+   Eval.an(tao);
+    alert("Eval ăn táo")
+    alert("Eval lên "+Eval.canNang+"dv");
+    alert("táo còn"+tao.canNang+"dv");
+Adam.say(alert("Adam nói : em lên kí rồi Eval"));
+</script>
+</body>
+</html>

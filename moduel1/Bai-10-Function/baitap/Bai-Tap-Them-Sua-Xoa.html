@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h4>Add new product</h4>
+<input type="text" id="tenSanPham" style="background: aquamarine" placeholder="enter in product">
+<input type="button" style="background: #d61b06" onclick="nhapSanPham() " value="add">
+<input type="button" style="background: blue" onclick="timKiem()" value="search">
+<h4>Display in product</h4>
+<p id="table"></p>
+<script>
+    let arrSanPham = ["oppo", "iphone"];
+    disPlay(arrSanPham)
+    //muốn gọi cái nào thì display rồi truyền mảng muốn in ra thôi display(mảng)
+    function disPlay(listArr) {
+        //thêm listArr để có thể tùy biến cái này để gọi lại một mảng bất kỳ vs có thể gọi arrSanPham or arrTim hồi nãy
+        listArr.sort()
+        let stringTable = '<table border="1" width="100%">';
+        stringTable += '<tr>\n' +
+            '        <th>Stt</th>\n' +
+            '        <th>Tên Sản Phẩm</th>\n' +
+            '        <th style="width: 120px;">Edit</th>\n' +
+            '        <th style="width: 120px;">Delete</th>\n' +
+            '    </tr>'
+        for (let i = 0; i < listArr.length; i++) {
+            stringTable += '<tr>\n' +
+                '    <td style="background: #ff6ce4"> ' + (i + 1) + ' </td>\n' +
+                '    <td >' + listArr[i] + '</td>\n' +
+                '    <td><input type="button"  style=" background: #d61b06; width: 100%" onclick="editSanPham(' + i + ')" value="EDIT"></td>\n' +
+                '    <td><input type="button" style="background: yellow; width: 100%" onclick="deleteSanPham(' + i + ') " value="DELETE"></td>\n' +
+                '</tr>'
+        }
+        stringTable += '</table>'
+        document.getElementById("table").innerHTML = stringTable;
+    }
+
+    disPlay()
+
+    function nhapSanPham() {
+        let sanPham;
+        sanPham = document.getElementById("tenSanPham").value;
+        arrSanPham.push(sanPham);
+        disPlay(arrSanPham);
+    }
+
+    function deleteSanPham(index) {
+        arrSanPham.splice(index, 1);
+        disPlay(arrSanPham)
+    }
+
+    function editSanPham(index) {
+        let thayDoiSanPham = prompt("thay đổi sản phẩm:")
+        arrSanPham[index] = thayDoiSanPham;
+        disPlay(arrSanPham)
+    }
+    //mấy cái trên display arrSanPham vì nó là mảng chính chứa dữ liệu thì gọi nó lại để nó xuất
+    function timKiem() {
+        let tim = document.getElementById("tenSanPham").value;
+        //cái này là tạo 1 array tạm để lưu giá trị cái search đc rồi in ra ko trùng vs array chính
+        let arrTim = [];
+        for (let i = 0; i < arrSanPham.length; i++) {
+            if (arrSanPham[i].includes(tim)) {
+                arrTim.push(arrSanPham[i])
+            }
+        }
+        //còn cái này chỉ cần in ra cái đã search đc thôi
+        disPlay(arrTim);
+    }
+
+
+</script>
+</body>
+</html>

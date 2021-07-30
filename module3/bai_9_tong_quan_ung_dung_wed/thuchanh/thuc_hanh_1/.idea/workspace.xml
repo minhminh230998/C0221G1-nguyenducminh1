@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="36649974-7822-41ba-a15c-7a3ffac4e8e2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../thuc_hanh_2/src/thuc_hanh_2/ServletThucHanh2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh_3/src/thuc_hanh_3/ServletThucHanh3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/module3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai3_thao_tac_voi_CSDL/baitap/bai_tap1_truy_van_du_lieu_quan_li_sinh_vien.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai3_thao_tac_voi_CSDL/baitap/bai_tap2_thao_tac_voi_CSDL_quan_li_ban_hang.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai3_thao_tac_voi_CSDL/thuchanh/nhap_lieu_quan_li_sinh_vien.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai3_thao_tac_voi_CSDL/thuchanh/truy_van_quan_li_sinh_vien.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai4_cac_ham_thong_dung_cua_mysql/baitap/bai_tap1.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai4_cac_ham_thong_dung_cua_mysql/thuchanh/thuc_hanh_quan_li_sinh_vien.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai5_SQLView_Index_Stored_Procedure/baitap/bai_tap1.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai5_SQLView_Index_Stored_Procedure/thuchanh/them_du_lieu_thuc_hanh1.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai5_SQLView_Index_Stored_Procedure/thuchanh/thuc_hanh1.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai5_SQLView_Index_Stored_Procedure/thuchanh/thuc_hanh2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai5_SQLView_Index_Stored_Procedure/thuchanh/thuc_hanh3.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai5_SQLView_Index_Stored_Procedure/thuchanh/thuc_hanh4.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai6_CSS/baitap/bai-tap1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai6_CSS/baitap/css-menu_truyen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai6_CSS/baitap/dinh-dang-van-ban-voi-css.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai6_CSS/baitap/doc-truyen.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai6_CSS/baitap/img/5cjLufm.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai6_CSS/baitap/img/fad0b3826621bf2ab26d9e92a060ce88.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai6_CSS/baitap/img/fb51103066a3711775f1f07e569d5696.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai6_CSS/baitap/img/img-sbbhktvp.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai6_CSS/baitap/img/nha.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai6_CSS/baitap/img/tải xuống.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai6_CSS/baitap/menu-truyen.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai6_CSS/baitap/style-bt1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai6_CSS/baitap/style-bt2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai6_CSS/thuchanh/style-thuc-hanh.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai6_CSS/thuchanh/su-dung-css.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai7-thiet_ke_bo_cu_trang_web/baitap/bai-tap_3/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai7-thiet_ke_bo_cu_trang_web/baitap/bai-tap_3/tao_layout_rwd.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai7-thiet_ke_bo_cu_trang_web/baitap/bai_tap_1/tao_layout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai7-thiet_ke_bo_cu_trang_web/baitap/bai_tap_2/Capture.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai7-thiet_ke_bo_cu_trang_web/baitap/bai_tap_2/hinh.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai7-thiet_ke_bo_cu_trang_web/baitap/bai_tap_2/icon-fb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai7-thiet_ke_bo_cu_trang_web/baitap/bai_tap_2/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai7-thiet_ke_bo_cu_trang_web/baitap/bai_tap_2/tao_giao_dien_facebook.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai7-thiet_ke_bo_cu_trang_web/baitap/bai_tap_4/doremon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai7-thiet_ke_bo_cu_trang_web/baitap/bai_tap_4/phim-hoat-hinh-tieng-anh-la-gi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai7-thiet_ke_bo_cu_trang_web/baitap/bai_tap_4/phim_hoat_hinh.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai7-thiet_ke_bo_cu_trang_web/baitap/bai_tap_4/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai7-thiet_ke_bo_cu_trang_web/baitap/bai_tap_4/top-phim-hoat-hinh-hay-nhat-the-gioi-hinh-12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai7-thiet_ke_bo_cu_trang_web/baitap/bai_tap_4/unnamed.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai7-thiet_ke_bo_cu_trang_web/thuchanh/thuc_hanh_1/box-model.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai7-thiet_ke_bo_cu_trang_web/thuchanh/thuc_hanh_2/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai7-thiet_ke_bo_cu_trang_web/thuchanh/thuc_hanh_2/thuc_hanh_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai7-thiet_ke_bo_cu_trang_web/thuchanh/thuc_hanh_3/menu_ngang.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai7-thiet_ke_bo_cu_trang_web/thuchanh/thuc_hanh_3/styles.css" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="1t46tikeCo6nAQ8OOtcAogIJ3ma" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../thuc_hanh_2" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="36649974-7822-41ba-a15c-7a3ffac4e8e2" name="Default Changelist" comment="" />
+      <created>1622016230183</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622016230183</updated>
+      <workItem from="1622016231346" duration="26000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="421" y="94" key="FileChooserDialogImpl" timestamp="1622016255591">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="94" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1622016255591" />
+  </component>
+</project>

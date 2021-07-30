@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bai3-ArrayMethod/Bai3-Array Method.iml" filepath="$PROJECT_DIR$/bai3-ArrayMethod/Bai3-Array Method.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai1-introduction_java/bai1-introduction_java.iml" filepath="$PROJECT_DIR$/bai1-introduction_java/bai1-introduction_java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai1-java-introduction/bai1-java-introduction.iml" filepath="$PROJECT_DIR$/bai1-java-introduction/bai1-java-introduction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai10_dsa_danhsach/bai10_dsa_danhsach.iml" filepath="$PROJECT_DIR$/bai10_dsa_danhsach/bai10_dsa_danhsach.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai11_generic_stack_queue/bai11_generic_stack_queue.iml" filepath="$PROJECT_DIR$/bai11_generic_stack_queue/bai11_generic_stack_queue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai12_collection_framework/bai12_collection_framework.iml" filepath="$PROJECT_DIR$/bai12_collection_framework/bai12_collection_framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai13_thuat_toan_tim_kiem/bai12_thuat_toan_tim_kiem.iml" filepath="$PROJECT_DIR$/bai13_thuat_toan_tim_kiem/bai12_thuat_toan_tim_kiem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai14_thuat_toan_sap_xep/bai14_thuat_toan_sap_xep.iml" filepath="$PROJECT_DIR$/bai14_thuat_toan_sap_xep/bai14_thuat_toan_sap_xep.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai15_xu_ly_ngoai_le_va_amp_debug/bai15_xu_ly_ngoai_le_va_amp_debug.iml" filepath="$PROJECT_DIR$/bai15_xu_ly_ngoai_le_va_amp_debug/bai15_xu_ly_ngoai_le_va_amp_debug.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai16_text_file/bai16_text_file.iml" filepath="$PROJECT_DIR$/bai16_text_file/bai16_text_file.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai17_binaryfile_serialization/bai17_binaryfile_serialization.iml" filepath="$PROJECT_DIR$/bai17_binaryfile_serialization/bai17_binaryfile_serialization.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai18_string_regex/bai18_string_regex.iml" filepath="$PROJECT_DIR$/bai18_string_regex/bai18_string_regex.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai2-CauLenhDieuKien/bai2-CauLenhDieuKien.iml" filepath="$PROJECT_DIR$/bai2-CauLenhDieuKien/bai2-CauLenhDieuKien.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai3-arrayandmethod/bai3-arrayandmethod.iml" filepath="$PROJECT_DIR$/bai3-arrayandmethod/bai3-arrayandmethod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai4-Class-and-object-in-java/bai4-Class-and-object-in-java.iml" filepath="$PROJECT_DIR$/bai4-Class-and-object-in-java/bai4-Class-and-object-in-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai5-Accessmodifier_static_getter-setter/bai5-Accessmodifier_static_getter-setter.iml" filepath="$PROJECT_DIR$/bai5-Accessmodifier_static_getter-setter/bai5-Accessmodifier_static_getter-setter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai6_inheritance/bai6_inheritance.iml" filepath="$PROJECT_DIR$/bai6_inheritance/bai6_inheritance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai7_abstraction/bai7-abstraction.iml" filepath="$PROJECT_DIR$/bai7_abstraction/bai7-abstraction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai7_abstract_class_interface/bai7_abstract_class_interface.iml" filepath="$PROJECT_DIR$/bai7_abstract_class_interface/bai7_abstract_class_interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai7_abstraction/bai7_abstraction.iml" filepath="$PROJECT_DIR$/bai7_abstraction/bai7_abstraction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai7_abstruction_interface/bai7_abstruction_interface.iml" filepath="$PROJECT_DIR$/bai7_abstruction_interface/bai7_abstruction_interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai8-clean_code-refactoring/bai8-clean_code-refactoring.iml" filepath="$PROJECT_DIR$/bai8-clean_code-refactoring/bai8-clean_code-refactoring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai7_abstraction/bai_tap.iml" filepath="$PROJECT_DIR$/bai7_abstraction/bai_tap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai_tap_lam_them/bai_tap_lam_them.iml" filepath="$PROJECT_DIR$/bai_tap_lam_them/bai_tap_lam_them.iml" />
+      <module fileurl="file://$PROJECT_DIR$/case_study/case_study.iml" filepath="$PROJECT_DIR$/case_study/case_study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module2-Minh.iml" filepath="$PROJECT_DIR$/module2-Minh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/quan_li_can_bo/quan_li_can_bo.iml" filepath="$PROJECT_DIR$/quan_li_can_bo/quan_li_can_bo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thi_module2/thi_module2.iml" filepath="$PROJECT_DIR$/thi_module2/thi_module2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai7_abstract_class_interface/thuc_hanh.iml" filepath="$PROJECT_DIR$/bai7_abstract_class_interface/thuc_hanh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai1-introduction_java/thuchanh.iml" filepath="$PROJECT_DIR$/bai1-introduction_java/thuchanh.iml" />
+    </modules>
+  </component>
+</project>

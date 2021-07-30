@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="1368px" height="768px" style="border:1px solid green;solid-color: green"></canvas>
+
+    <script>
+        class CreateCircle{
+            constructor(radius) {
+                this.radius = radius;
+            }
+            draw(radius,x,y){
+                let ctx = document.getElementById("myCanvas").getContext("2d");
+                ctx.beginPath();
+                ctx.arc(x, y,radius, 0, 2 * Math.PI);
+                ctx.fill();
+            }
+        }
+       let c1= new CreateCircle(100);
+       // let c2= new CreateCircle(50);
+       // let c3= new CreateCircle(150);
+        let draw= new CreateCircle();
+        draw.draw(c1,10,10)
+        // draw.draw(c2,200,200)
+        // draw.draw(c3,500,500)
+    </script>
+</body>
+</html>

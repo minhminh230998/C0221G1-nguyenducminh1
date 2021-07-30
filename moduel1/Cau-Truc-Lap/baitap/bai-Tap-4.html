@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+bai1
+<script>
+    let nb1 = 0;
+    let nb2 = 1;
+    let nb3 = parseInt(prompt("Nhap vào : ''"));
+    document.write(nb1);
+    document.write("<br>");
+    for (i=1;i<nb3;i++){
+        document.write(nb2);
+        document.write("<br>");
+        let next =nb1+nb2;
+        nb1 = nb2;
+        nb2= next;
+    }
+</script>
+bai2
+<script>
+    let nb5 = 1;
+    let nb4 = parseInt(prompt("nhập vào :"));
+    let giaithua = 1;
+    for (i = 0; i < nb4; i++) {
+        if (i == 0) {
+            giaithua = 1;
+
+        } else {
+            nb5 = i;
+            giaithua = giaithua * nb5;
+        }
+    }
+    document.write(giaithua)
+</script>
+bai3
+<script>
+    for (i = 1; i <= 5; i++) {
+        for (j = 5; j >= i; j--) {
+            document.write("*")
+        }
+        document.write("<br>")
+    }
+    for (i=5;i>=1;i--){
+        for (j=5;j>=i;j--){
+            document.write("*")
+        }
+        document.write("<br>")
+    }
+    for (i = 1; i <= 5; i++) {
+        for (j = 4; j >= i; j--) {
+            let a=("&nbsp;&nbsp")
+            document.write(a)
+        }
+        for (z=1;z<=i;z++){
+            document.write("*")
+        }
+        document.write("<br>")
+    }
+    for (i=5;i>=1;i--){
+        for (j=4;j>=i;j--){
+            let b=("&nbsp;&nbsp")
+            document.write(b)
+        }
+        for (z=1;z<=i;z++){
+            document.write("*")
+        }
+        document.write("<br>")
+    }
+
+</script>
+<script>
+    for (let i=0;i<=7;i++){
+        for( let j=0;j<=15;j++){
+            if (i===0 || j===0||i===7||j===15){
+                document.write("*")
+            }else {
+                document.write("&nbsp;&nbsp")
+            }
+        }document.write("<br>")
+    }
+</script>
+<script>
+    let Tien=parseInt(prompt("nhập số tiền :"));
+    let Thang=parseInt(prompt("nhập số tháng vay :"));
+    let lai=parseFloat(prompt("nhập phần trăm trên tháng :"));
+    let laiPhaiTra=0;
+    for (let i=1;i<=Thang;i++){
+        laiPhaiTra=Tien*lai/100;
+        Tien+=laiPhaiTra;
+    }
+    document.write(Tien)
+</script>
+
+</body>
+</html>

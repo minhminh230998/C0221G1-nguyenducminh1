@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function mangHaiChieu(arr) {
+        let m = prompt("");
+        let n = prompt("");
+        arr = [];
+        for (let i = 0; i < parseInt(m); i++) {
+            arr[i] = [];
+            for (let j = 0; j < parseInt(n); j++) {
+                arr[i][j] = prompt("");
+            }
+        }
+        return arr;
+    }
+
+    function soSanh(arr1) {
+        let arr2=mangHaiChieu(arr1);
+        let max = arr2[0][0];
+        let min = arr2[0][0];
+        for (let i = 0; i < arr2.length; i++) {
+            for (let j = 0; j < arr2[i].length; j++) {
+                if(arr2[i][j]>max){
+                    max=arr2[i][j];
+                }
+                if(arr2[i][j]<min){
+                    min=arr2[i][j];
+                }
+            }
+        }
+        return "max là "+max+","+"min là "+min;
+    }
+    let arr3;
+    alert(soSanh(arr3));
+</script>
+</body>
+</html>

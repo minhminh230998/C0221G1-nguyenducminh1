@@ -1,0 +1,40 @@
+<app-navbar></app-navbar>
+<h2>Today's article</h2>
+<hr>
+<div>
+  <a href="{{article.url}}" target="_blank">{{article.title}}</a>
+</div>
+<hr>
+<div>
+  <div>
+    <h2>Article Information</h2>
+    <table>
+      <tr>
+        <td>Title:</td>
+        <td><textarea type="text" #title cols="70"></textarea></td>
+      </tr>
+      <tr>
+        <td>Url:</td>
+        <td>
+          <textarea type="text" #url cols="70"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <button style="float: right" (click)="addNewArticle(title.value , url.value)">Add</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div *ngFor="let art of articles | paginate : config; let i = index ">
+
+    <a href="{{art.url}}" target="_blank">{{i+1}}</a>:
+    <a href="{{art.url}}" target="_blank">{{art.title}}</a>:
+    <app-like></app-like>
+  </div>
+</div>
+<pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
+
+<app-footer></app-footer>
+

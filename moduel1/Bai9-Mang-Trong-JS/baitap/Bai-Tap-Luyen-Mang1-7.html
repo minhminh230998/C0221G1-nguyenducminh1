@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr=new Array(4)
+    for ( let i=0;i<arr.length;i++){
+        arr[i]=parseInt(prompt("nhập vào mảng:"))
+    }
+    let V=parseInt(prompt("Nhập số bất kì:"));
+    for (let i=0;i<arr.length;i++){
+        if(V==arr[i]){
+            alert("V is in the array");
+            arr.splice(i,1);
+            i=i-1;
+            arr.push(0);
+           // break;
+        }else if(i==arr.length){
+            alert("V is not in the array");
+        }
+    }alert(arr)
+
+</script>
+</body>
+</html>

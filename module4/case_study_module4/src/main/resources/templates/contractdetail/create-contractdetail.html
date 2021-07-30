@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+</head>
+<body>
+<header th:replace="header"></header>
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-8">
+        <h1 class="text-center">Create Contract Detail</h1>
+        <form th:action="@{/contractDetail/create}" th:object="${contractDetailDto}" method="post">
+
+            <div class="form-group row">
+                <label for="select" class="col-3 col-form-label"> Contract:</label>
+                <div class="col-9">
+                    <select th:field="*{contract}" id="select" name="select" class="custom-select">
+                        <option th:if="${contracts}" th:value="${contracts.id}" th:text="${contracts.id}"></option>
+                        <option th:each="contract,index : ${contractList}"
+                                th:text="${contract.id}"
+                                th:value="${contract.id}"
+
+                        ></option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="select" class="col-3 col-form-label">Attach Service :</label>
+                <div class="col-9">
+                    <select th:field="*{attachService}" name="select" class="custom-select">
+                        <option th:each="attachService,index : ${attachServiceList}"
+                                th:text="${attachService.name}"
+                                th:value="${attachService.id}"></option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="text" class="col-3 col-form-label">Quantity:</label>
+                <div class="col-9">
+                    <input th:field="*{quantity}" id="text" name="text" type="text" class="form-control">
+                    <small style="color: red" th:if="${#fields.hasErrors('quantity')}"
+                           th:errors="*{quantity}"></small>
+                </div>
+            </div>
+            <div class="form-group row">
+
+                <div class="offset-4 col-lg-3">
+
+                    <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <div class="col-2"></div>
+</div>
+<footer th:replace="footer"></footer>
+
+
+</body>
+</html>

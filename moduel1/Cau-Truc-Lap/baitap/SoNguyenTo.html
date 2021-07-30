@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Số nguyên tố</title>
+</head>
+<body>
+<script>
+    // in ra 20 số nguyên tố đầu tiên trong dãy số tự nhiên;
+    let num = 0;
+    let result = "";
+    let count = 0; // đếm số lượng số nguyên tố
+    while (count < 20) {
+        let check = true;
+        if (num < 2) {
+            check = false;
+        } else {
+            for (let i = 2; i < num; i++) {
+                if (num % i == 0) {
+                    check = false;
+                    break;
+                }
+            }
+        }
+        if (check) {
+            count++;
+            result += num + ", ";
+        }
+        num++;
+    }
+    document.write(result);
+
+
+</script>
+</body>
+</html>

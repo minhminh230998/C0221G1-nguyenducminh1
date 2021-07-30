@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Caculator</h2>
+
+<p>Click the button to parse different strings.</p>
+<input type ="text" id = "n1" />
+<input type ="text" id = "n2" />
+<br>
+<br>
+<button onclick="cong()" id="cong">Cong +</button>
+<button onclick="tru()" id="tru">Tru -</button>
+<button onclick="nhan()" id="nhan">Nhan *</button>
+<button onclick="chia()" id="chia">Chia /</button>
+<br>
+<br>
+
+<label>ket qua: </label><span id="kq"></span>
+
+
+<script language="javascript">
+
+    function cong() {
+        let a = document.getElementById('n1').value;
+        let b = document.getElementById('n2').value;
+        let kq = 0;
+        kq = parseInt(a) + parseInt(b);
+        document.getElementById("kq").innerHTML = kq;
+    }
+    function tru() {
+        let a = document.getElementById('n1').value;
+        let b = document.getElementById('n2').value;
+        let kq = 0;
+        kq = parseInt(a) - parseInt(b);
+        document.getElementById("kq").innerHTML = kq;
+    }
+    function nhan() {
+        let a = document.getElementById('n1').value;
+        let b = document.getElementById('n2').value;
+        let kq = 0;
+        kq = parseInt(a) * parseInt(b);
+        document.getElementById("kq").innerHTML = kq;
+    }
+    function chia() {
+        let a = document.getElementById('n1').value;
+        let b = document.getElementById('n2').value;
+        let kq = 0;
+        if(b==0){
+            alert("Khong the chia cho 0");
+        }else{
+            kq = parseInt(a) / parseInt(b);
+        }
+        document.getElementById("kq").innerHTML = kq;
+    }
+
+</script>
+
+</body>
+</html>

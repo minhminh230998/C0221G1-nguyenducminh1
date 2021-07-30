@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="game"></div>
+<script>
+    function Hero(image, top, left, size){
+        this.image = image;
+        this.top = top;
+        this.left = left;
+        this.size = size;
+
+        this.getHeroElement = function(){
+            return '<img src="https://g.redditmedia.com/29FDtwEoq7koULWBlL54Y4NY6ehP6yaHx03MQ3rzI5s.gif?fm=mp4&mp4-fragmented=false&s=d94d4e7833e49834c89cb5d244972094" width="'+ this.size + '"' + 'height="'+ this.size + '"' + ' src="' + this.image +'"' + ' style="top: '+this.top+'px; left:'+this.left+'px;position:absolute;" />';
+        }
+
+        this.moveRight = function(){
+            this.left += 100;
+            console.log('ok: ' + this.left);
+        }
+        this.moveBottom = function(){
+            this.top += 100;
+            console.log('ok: ' + this.top);
+        }
+        this.moveLeft = function(){
+            this.left -= 100;
+            console.log('ok: ' + this.left);
+        }
+
+    }
+
+    let hero = new Hero('garen.gil', 0, 0, 300);
+    function start(){
+        if(hero.left < window.innerWidth - hero.size&&hero.top<window.innerHeight-hero.size){
+            hero.moveRight();
+        }else if(hero.left>window.innerWidth-hero.size&&hero.top<window.innerHeight-hero.size){
+            hero.moveBottom();
+        }else  if (hero.top>window.innerHeight-hero.size){
+            hero.moveLeft();
+        }
+        document.getElementById('game').innerHTML = hero.getHeroElement();
+        setTimeout(start, 500)
+    }
+
+    start();
+</script>
+</body>
+</html>

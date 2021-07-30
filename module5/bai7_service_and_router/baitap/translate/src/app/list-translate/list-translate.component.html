@@ -1,0 +1,18 @@
+
+
+<table>
+  <tr>
+    <td>STT</td>
+
+    <td>En</td>
+
+    <td>View</td>
+
+  </tr>
+  <tr *ngFor="let t of arr; index as i">
+    <td>{{i + 1}}</td>
+    <td>{{t.word}}</td>
+    <td><a [routerLink]="['/translate/view', t.id]">View</a></td>
+
+  </tr>
+</table>

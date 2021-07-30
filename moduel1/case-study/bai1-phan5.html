@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num1 = prompt("Nhập Vào mảng 1:");
+    let num2 = prompt("Nhập Vào mảng 2:");
+    let text =[];
+    let sum=0;
+    console.log(text);
+    for (let i = 0;  i<parseInt(num1); i++) {
+        for (let j = 0; j < parseInt(num2); j++) {
+           let nhap= prompt(" nhập vào phần tủ");
+            if (parseInt(nhap)%2===0) {
+             sum+=parseInt(nhap)   ;
+            }
+        }
+    }
+    alert(sum);
+
+</script>
+</body>
+</html>

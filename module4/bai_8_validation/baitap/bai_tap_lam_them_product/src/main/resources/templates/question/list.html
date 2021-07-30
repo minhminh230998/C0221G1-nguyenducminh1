@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+    <style type="text/css">
+        h3 {
+            background-color: blue;
+            color: white;
+            padding: 10px 0 10px 20px;
+        }
+
+        footer {
+            margin: 10px 0;
+        }
+
+        #product {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #product td, #product th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #product tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #product tr:hover {
+            background-color: #ddd;
+        }
+
+        #product th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        input[type=text], input[type=email] {
+            width: 100%;
+            padding: 12px 0px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 300px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        #form {
+            width: 500px;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .notify span {
+            font-size: 15px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+<div th:if="${message}">
+    <p th:text="${message}"></p>
+</div>
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-lg-3">
+            <a style="margin-left: 50px" th:href="@{/question/create}">
+                <button type="submit" class="btn btn-primary">Add New Question +
+                </button>
+            </a>
+        </div>
+        <div class="col-lg-6">
+            <h1 style="text-align: center;color: forestgreen;font-weight:bold">Question</h1>
+        </div>
+        <div class="col-lg-3">
+            <form style="margin-left: 100px" method="get" th:action="@{/question}">
+                <input style="float: left;width: 200px" name="title" class="form-control " type="search title"
+                       placeholder="Search" aria-label="Search">
+                <input style="float: left;width: 200px" name="nameQuestionType" class="form-control " type="search name questionType"
+                       placeholder="Search" aria-label="Search">
+                <button style="float: left" class="btn btn-outline-success " type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+<table id="product">
+    <tr>
+        <th>STT</th>
+        <th>Title</th>
+        <th>Question Type</th>
+        <th>Date create</th>
+        <th>Status</th>
+        <th>Delete</th>
+        <th>View</th>
+
+    </tr>
+
+
+    <tr th:each="question,rowStat : ${questions}">
+        <td th:text="${rowStat.index+1}"></td>
+        <td th:text="${question.getTitle()}"></td>
+        <td th:text="${question.getQuestionType().getName()}"></td>
+        <td th:text="${question.getDateCreate()}"></td>
+       <td th:text="${question.getStatus()}"></td>
+        <td>
+            <button th:data2="${question.getTitle()}" th:data1="${question.getId()}"
+                    onclick="deleteQuestion(this.getAttribute('data1'),this.getAttribute('data2'))"
+                    type="button"
+                    class="btn btn-danger" data-toggle="modal" data-target="#exampleModalCenter">
+                Delete
+            </button>
+        </td>
+        <td>
+            <button th:data2="${question.getTitle()}" th:data1="${question.getQuestionType().getName()}" th:data3="${question.getDateCreate()}" th:data4="${question.getStatus()}" th:data5="${question.getAnswer()}" th:data6="${question.getQuestion()}"
+                    onclick="viewProduct(this.getAttribute('data1'),this.getAttribute('data2'),this.getAttribute('data3'),this.getAttribute('data4'),this.getAttribute('data5'),this.getAttribute('data6'))"
+                    type="button"
+                    class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter1">
+                View
+            </button>
+        </td>
+        <!-- Modal -->
+        <form th:action="@{/question/delete}" method="get">
+
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                 aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Question Delete</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Bạn có muốn xóa câu hỏi này: <span id="nameQuestion"></span></p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+
+                            <button type="submit" id="idQuestion" name="question" class="btn btn-danger">Delete
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog"
+                 aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLong"> Question View </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group row">
+
+                                <p>Id:<span style="color: darkorchid" id="idQuestion1"></span></p>
+
+                            </div>
+                            <div class="form-group row">
+
+                                <p>Title:<span style="color: darkorchid" id="nameTitle1"></span>
+                                </p>
+                            </div>
+                            <div class="form-group row">
+
+                                <p>Question:<span style="color: darkorchid" id="nameQuestion1"></span>
+                                </p>
+                            </div>
+                            <div class="form-group row">
+
+                                <p>Date create:<span style="color: darkorchid"
+                                                                   id="dateCreate"></span>
+                                </p>
+                            </div>
+                            <div class="form-group row">
+
+                                <p>Status:<span style="color: darkorchid"
+                                                           id="status"></span></p>
+                            </div>
+                            <div class="form-group row">
+
+                                <p>Answer:<span style="color: darkorchid"
+                                                           id="answer"></span></p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+    </tr>
+    bt4-input
+
+</table>
+<a th:href="@{/question(page=${questions.number - 1},title=${titles},nameQuestionType=${nameQuestionTypes})}" th:if="${questions.hasPrevious()}">Previous</a>
+<span th:text="${questions.number + 1}"></span>/<span th:text="${questions.totalPages}"></span>
+<a th:href="@{/question(page=${questions.number + 1},title=${titles},nameQuestionType=${nameQuestionTypes})}" th:if="${questions.hasNext()}">Next</a>
+<script>
+    function deleteQuestion(id, name) {
+        document.getElementById("idQuestion").value = id;
+        document.getElementById("nameQuestion").innerText = name;
+    }
+    function viewProduct(id, name,dateCreate,status,answer,question) {
+        document.getElementById("idQuestion1").innerText = id;
+        document.getElementById("nameTitle1").innerText = name;
+        document.getElementById("nameQuestion1").innerText = question;
+        document.getElementById("dateCreate").innerText = dateCreate;
+        document.getElementById("status").innerText = status;
+        document.getElementById("answer").innerText = answer;
+    }
+</script>
+</body>
+</html>

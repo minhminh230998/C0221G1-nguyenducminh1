@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<header th:replace="header"></header>
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-8">
+        <h1 class="text-center">Create Service</h1>
+        <form th:action="@{/service/create}" th:object="${serviceDto}" method="post">
+            <div class="form-group row">
+                <label class="col-3 col-form-label">Id:</label>
+                <div class="col-9">
+                    <input th:field="*{id}" type="text" class="form-control">
+                    <small style="color: red" th:if="${#fields.hasErrors('id')}" th:errors="*{id}"></small>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="select" class="col-3 col-form-label">Service type:</label>
+                <div class="col-9">
+                    <select th:field="*{serviceType}"
+
+                            id="select" name="select" class="custom-select">
+                        <option th:each="serviceType,index : ${serviceTypeList}"
+                                th:text="${serviceType.name}"
+                                th:value="${serviceType.id}"
+
+                        ></option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="select" class="col-3 col-form-label">Service Rent Type:</label>
+                <div class="col-9">
+                    <select  th:field="*{rentType}" name="select" class="custom-select">
+                        <option th:each="rentType,index : ${rentTypeList}"
+                                th:text="${rentType.name}"
+                                th:value="${rentType.id}"></option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="text" class="col-3 col-form-label">Service name:</label>
+                <div class="col-9">
+                    <input th:field="*{name}" id="text" name="text" type="text" class="form-control">
+                    <small style="color: red" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></small>
+                </div>
+            </div>
+
+            <div>
+                <div class="form-group row">
+                    <label class="col-3 col-form-label">Service Area:</label>
+                    <div class="col-9">
+                        <input th:field="*{area}" name="text1" type="text" class="form-control">
+                        <small style="color: red" th:if="${#fields.hasErrors('area')}" th:errors="*{area}"></small>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="text2" class="col-3 col-form-label">Service Cost:</label>
+                    <div class="col-9">
+                        <input id="text2" th:field="*{cost}" name="text2" type="text" class="form-control">
+                        <small style="color: red" th:if="${#fields.hasErrors('cost')}" th:errors="*{cost}"></small>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="text3" class="col-3 col-form-label">Service Max People:</label>
+                    <div class="col-9">
+                        <input id="text3" th:field="*{maxPeople}" name="text3" type="text" class="form-control">
+                        <small style="color: red" th:if="${#fields.hasErrors('maxPeople')}" th:errors="*{maxPeople}"></small>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label  class="col-3 col-form-label standardRoom">Service Standard Room:</label>
+                    <div class="col-9">
+                        <input   th:field="*{standardRoom}" name="text4" type="text" class="form-control standardRoom">
+                        <small style="color: red" th:if="${#fields.hasErrors('standardRoom')}" th:errors="*{standardRoom}"></small>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label   class="col-3 col-form-label poolArea">Service Pool Area:</label>
+                    <div class="col-9">
+                        <input  th:field="*{foolArea}" name="text5" type="number" class="form-control poolArea">
+                        <small style="color: red" th:if="${#fields.hasErrors('foolArea')}" th:errors="*{foolArea}"></small>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label  class="col-3 col-form-label numberFloor">Service Number Floors:</label>
+                    <div class="col-9">
+                        <input   th:field="*{numberFloors}" name="text5" type="number" class="form-control numberFloor">
+                        <small style="color: red" th:if="${#fields.hasErrors('numberFloors')}" th:errors="*{numberFloors}"></small>
+                    </div>
+                </div>
+                <div class="form-group row">
+
+                    <div class="offset-4 col-lg-3">
+
+                        <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                <div class="offset-4 col-lg-3">
+                    <a href="/customer/list"><button type="button" class="btn btn-primary">Back to list</button></a>
+                </div>
+            </div>
+            </div>
+
+        </form>
+    </div>
+    <div class="col-2"></div>
+</div>
+<footer th:replace="footer"></footer>
+
+<script>
+    $('#select').change(function(){
+        let id=$('#select').val();
+        if(id==1){
+            $('.poolArea').css('display','block')
+            $('.standardRoom').css('display','block')
+            $('.numberFloor').css('display','block')
+        }
+         if(id==2){
+             $('.standardRoom').css('display','block')
+             $('.numberFloor').css('display','block')
+             $('#poolArea').css('display','none')
+         }
+        if(id==3){
+            $('.poolArea').css('display','none')
+            $('.standardRoom').css('display','none')
+            $('.numberFloor').css('display','none')
+        }
+    })
+
+</script>
+</body>
+</html>

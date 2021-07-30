@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    font-family: "serif", "Times New Roman";
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    height: 60px;
+    display: block;
+    top: 0;
+    z-index: 1;
+}
+
+.material-icons {
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    font-size: 40px;
+    color: white;
+    margin-left: 20px;
+}
+
+.fb {
+    font-size: 60px;
+    color: blue;
+}
+
+.input {
+    float: left;
+    height: 40px;
+    width: 300px;
+    margin-top: 10px;
+    line-height: 60px;
+    border-radius: 50px;
+    outline: none;
+}
+
+.icon1 {
+    margin-left: 150px;
+    padding-right: 30px;
+}
+
+.icon2 {
+    padding-right: 30px;
+}
+
+.icon3 {
+
+    float: right;
+    margin-right: 20px;
+}
+
+.material-icons:hover {
+    color: blue;
+}
+
+.fb:active {
+    background-color: white;
+}
+
+.box {
+    display: flex;
+    margin-top: 60px;
+}
+
+.box1 {
+    top: 0px;
+    margin-top: 60px;
+    width: 20%;
+    height: 100vh;
+    background-color: #333333;
+    position: fixed;
+}
+
+.box1a ul li {
+    margin-top: 20px;
+    list-style: none;
+}
+
+.box1a ul li a {
+    color: white;
+}
+
+.box1a ul li a:hover {
+    background-color: #5e5e5e;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.box2 {
+    width: 60%;
+    margin-left: 20.5%;
+    height: 1000px;
+    background-color: #919191;
+
+}
+
+.box2 img {
+    width: 650px;
+    height: 500px;
+
+    margin-left: 7%;
+
+}
+
+.box2 p {
+    margin: 7%;
+    color: white;
+}
+
+.box2 h4 {
+    margin: 7%;
+    color: white;
+}
+
+.box3 {
+    background-color: #333333;
+    width: 19%;
+    margin-left: 7px;
+}
+.box3 ul li {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.box3 ul li a {
+    color: white;
+}
+
+.box3 ul li a:hover {
+    background-color: #5e5e5e;
+    padding: 10px;
+    border-radius: 30px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = prompt('nhâp số');
+    let result = '';
+    let i = 2;
+    function inSoNguyenTo(number) {
+        for (let i=0;i<number;i++) {
+            if (checkNguyenTo(i)) {
+                result += +i + ' ;';
+            }
+        }
+        alert(result)
+    }
+    inSoNguyenTo(number);
+    function checkNguyenTo(num) {
+        if (num < 2) {
+            return false;
+        } else {
+            for (let i = 2; i <= Math.sqrt(num); i++) {
+                if (num % i == 0) {
+                    return false;
+                }
+            }return true
+        }
+
+    }
+</script>
+</body>
+</html>

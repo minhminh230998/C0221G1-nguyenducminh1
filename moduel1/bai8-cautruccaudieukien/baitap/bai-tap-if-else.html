@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>baitapifelse</title>
+</head>
+<body>
+<!--bài1-->
+<h2>a có chia hết cho b</h2>
+<input type="number" id="a">
+<input type="number" id="b">
+<button type="button" onclick="chia()">kết quả</button>
+<script>
+function chia() {
+let num1=parseInt(document.getElementById("a").value);
+let num2=parseInt(document.getElementById("b").value);
+let chia= num1%num2;
+if (chia!=0) {
+    document.write("a không chia hết cho b")
+}else {
+    document.write("a chia hết cho b")
+}
+
+}
+
+</script>
+<br>
+<br>
+<br>
+<!--bài2-->
+<h2>Tuổi vào lớp 10</h2>
+<input type="number" id="tuoi">
+<button type="button" onclick="kq()">kết quả</button>
+<script>
+    function kq() {
+        let num=parseInt(document.getElementById("tuoi").value);
+        if (num<16) {
+            alert("bạn chưa đủ tuổi để học lớp 10")
+        }else {
+            alert("bạn đã đủ tuổi học lớp 10")
+        }
+    }
+
+
+</script>
+<br>
+<br>
+<br>
+<!--bài3-->
+<h2>Số lớn hơn 0</h2>
+<input type="number" id="so">
+<button type="button" onclick="kq()">kết quả</button>
+<script>
+    function kq() {
+        let num=parseInt(document.getElementById("so").value);
+        if (num<0) {
+            alert("nhỏ hơn 0")
+        }else if (num=0) {
+            alert("bằng 0")
+        }else {
+            alert("lớn hơn 0")
+        }
+    }
+</script>
+<br>
+<br>
+<br>
+<!--bài4-->
+<h2>Tìm giá trị lớn nhất</h2>
+<p>nhập số a</p>
+<input type="number" id="so1">
+<br>
+<p>Nhập số b</p>
+<input type="number" id="so2">
+<br>
+<P>Nhập số c</P>
+<input type="number" id="so3">
+<br>
+<br>
+<button type="button" onclick="kq()">Kết quả</button>
+<script>
+    function kq() {
+        let a = parseInt(document.getElementById("so1").value);
+        let b = parseInt(document.getElementById("so2").value);
+        let c = parseInt(document.getElementById("so3").value);
+        if (a>b) {
+            if (a>c) {
+                alert("a lớn nhất");
+            }else if (b>c) {
+                alert("b lớn nhất");
+            }
+        }else {
+            alert("c lớn nhất")
+        }
+
+    }
+</script>
+<br>
+<br>
+<br>
+<!--bài5-->
+<p>Điểm kiểm tra</p>
+<input type="number" id="kt">
+<br>
+<p>Điểm giữa kì</p>
+<input type="number" id="gk">
+<br>
+<P>Điểm cuối kì</P>
+<input type="number" id="ck">
+<br>
+<br>
+<button type="button" onclick="kq()">Kết quả</button>
+<script>
+    function kq() {
+        let diem1 = parseInt(document.getElementById("kt").value);
+        let diem2 = parseInt(document.getElementById("gk").value);
+        let diem3 = parseInt(document.getElementById("ck").value);
+        let tong = (diem1+diem2*2+diem3*3);
+        let tb= (tong/6);
+        if (tb>=8) {
+        alert("đạt học sinh giỏi")
+        } else if(tb>=6.5){
+            alert("đạt học sinh khá")
+        } else  if(tb>=5) {
+            alert("đat học sinh trung bình")
+        } else {
+            alert("rớt rồi, ở lại lớp")
+        }
+    }
+</script>
+<br>
+<br>
+<br>
+<!--bai6-->
+<h2>Tính hoa hồng nhận được</h2>
+<p>Doanh thu</p>
+<input type="text" id="dt">
+<button type="button" onclick="kq()">Kết quả</button>
+<script>
+    function kq() {
+        let dthu=parseInt(document.getElementById("dt").value);
+        let hh=0
+        if (dthu>=100000000) {
+            hh=dthu/100*30
+            alert("hoa hồng là" + hh +"VND")
+        }else if (dthu>=50000000) {
+            hh=dthu/100*20
+            alert("hoa hồng là" + hh +"VND")
+        }else {
+            hh=dthu/100*10
+            alert("hoa hồng là" + hh +"VND")
+        }
+
+    }
+</script>
+<!--bài7-->
+<h2> Số tiền điện thoại phải trả</h2>
+<p>Nhập số phút đã sử dụng</p>
+<input type="text" id="min">
+<button type="button" onclick="kq()">Kết quả</button>
+<script>
+    function kq() {
+        let phut=parseInt(document.getElementById("min").value);
+        let tien= phut*2000;
+        alert("số tiền phải trả là"+ tien +"VND")
+    }
+</script>
+
+
+</body>
+</html>

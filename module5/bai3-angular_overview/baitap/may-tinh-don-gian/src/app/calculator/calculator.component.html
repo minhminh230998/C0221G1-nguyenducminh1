@@ -1,0 +1,12 @@
+<p>Calculator</p>
+<input  type="number" #number1 required>
+<select #select >
+  <option value="+">+</option>
+  <option value="-">-</option>
+  <option value="*">*</option>
+  <option value="/">/</option>
+</select>
+<input  type="number" #number2 required>
+<input type="button" class="btn btn-success" (click)="calculate(number1.value,number2.value,select.value)" value="Kết Quả">
+<p>{{result}}</p>
+

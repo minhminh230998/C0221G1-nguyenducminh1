@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function kiemTraSoNguyenTo(num) {
+        let check = true;
+        if (num < 2) {
+            check = false;
+
+        } else {
+            for (let i = 2; i < num; i++) {
+                if (num % i === 0) {
+                    check = false;
+                }
+            }
+            return check;
+        }
+    }
+
+    function lietKeSNT(arr) {
+        let arr1 = '';
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr[i].length; j++) {
+
+                if (kiemTraSoNguyenTo(arr[i][j]) == true) {
+                    arr1 += arr[i][j] ;
+                }
+            }
+        }
+        return arr1;
+    }
+
+     function mangHaiChieu(arr) {
+        let m = prompt("");
+        let n = prompt("");
+        arr = [];
+        for (let i = 0; i < parseInt(m); i++) {
+            arr[i] = [];
+            for (let j = 0; j < parseInt(n); j++) {
+                arr[i][j] = prompt("");
+            }
+        }
+        return arr
+    }
+    let arr3;
+    let arr4=mangHaiChieu(arr3);
+    alert(lietKeSNT(arr4));
+    alert(lietKeSNT(arr4).length);
+
+
+</script>
+</body>
+</html>

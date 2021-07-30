@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a th:href="@{/home}"><button>Back to Home</button></a>
+<h3>Tên Sách:</h3>
+<p th:text="${borrow.book.name}" th:value="${borrow.book.name}"></p>
+<h3>Mã code của bạn là:</h3>
+<p th:text="${borrow.code}" th:value="${borrow.book.name}" ></p>
+</body>
+</html>

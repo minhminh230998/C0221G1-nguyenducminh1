@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyển đổi tiền tệ</title>
+</head>
+<body>
+<b>Amount</b>
+<input type="number" id="n" >
+<label>From currency</label>
+<select id="chuyen">
+    <option value="vnd">vnd</option>
+    <option value="usd">usd</option>
+</select>
+<label>To currency</label>
+<select id="doi">
+    <option value="vnd">vnd</option>
+    <option value="usd">usd</option>
+</select>
+<button onclick="kq()">convert</button>
+<span id="kq"></span>
+<script>
+    function kq() {
+        let a =(document.getElementById("n").value);
+        let b =document.getElementById("chuyen").value;
+        let c =document.getElementById("doi").value;
+        let kq= 0;
+        if(b=="vnd"&&c=="usd") {
+            kq = parseInt(a) / 23000;
+            document.getElementById("kq").innerHTML= kq;
+        }
+        else if(b=="usd"&&c=="vnd"){
+                kq = parseInt(a)*23000;
+                document.getElementById("kq").innerHTML= kq;
+        }
+        else {
+            kq = parseInt(a);
+            document.getElementById("kq").innerHTML = kq;
+        }
+
+
+    }
+
+
+</script>
+</body>
+</html>

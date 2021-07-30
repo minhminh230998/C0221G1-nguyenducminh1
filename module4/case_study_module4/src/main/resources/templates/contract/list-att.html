@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<td th:each="attach:${listAttach}" >
+    <p th:text="${attach.getAttachService().getName()}"></p>
+    <p th:text="${attach.getQuantity()}"></p>
+</td>
+</body>
+</html>

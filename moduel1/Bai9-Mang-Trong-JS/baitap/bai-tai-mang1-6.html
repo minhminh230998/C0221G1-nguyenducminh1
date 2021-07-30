@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let soLanLap=10;
+    let arr=new Array();
+
+    for (let i=0;i<soLanLap;i++){
+        arr[i]=parseInt(prompt("Nhập vào:"));
+    }
+    let arr1=parseInt(prompt("nhập vào số cần tìm"));
+   for(let i=0;i<arr.length;i++) {
+       if (arr[i]===arr1) {
+           alert("V is in the array");
+           break;
+       } else if(i==arr.length-1){
+           alert("V is not in the array");
+       }
+   }
+</script>
+</body>
+</html>

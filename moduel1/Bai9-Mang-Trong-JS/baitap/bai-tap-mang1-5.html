@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num=prompt("Bạn muốn nhập bao nhiêu số:");
+    let arr=new Array();
+    for (let i=0;i<num;i++){
+        arr[i]=parseInt(prompt("Số bạn muốn nhập"));
+    }
+    let ketQua='';
+    for(let i=0;i<arr.length;i++){
+        if (arr[i]<0){
+            ketQua+=arr[i];
+
+        }
+    }
+    document.write('số âm là:'+ketQua);
+</script>
+</body>
+</html>

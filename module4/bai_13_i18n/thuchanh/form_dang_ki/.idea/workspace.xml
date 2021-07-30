@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9aae8bb4-52f9-4da2-b7bb-577e4894a58c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="1uQqZ3910iB0wKBu9ciwXpF09M6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="experimental" />
+  </component>
+  <component name="RunManager">
+    <configuration name="ValidateFormDangKiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="validate_form_dang_ki.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.ValidateFormDangKiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9aae8bb4-52f9-4da2-b7bb-577e4894a58c" name="Default Changelist" comment="" />
+      <created>1624608212663</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1624608212663</updated>
+      <workItem from="1624608220286" duration="3880000" />
+      <workItem from="1624673901007" duration="1525000" />
+      <workItem from="1624678543978" duration="2214000" />
+      <workItem from="1624873481808" duration="8000" />
+      <workItem from="1625197855891" duration="876000" />
+      <workItem from="1625198803101" duration="1668000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="765" y="234" key="#com.intellij.ide.util.MemberChooser" timestamp="1624609540934">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="234" key="#com.intellij.ide.util.MemberChooser/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1624609540934" />
+    <state x="740" y="273" key="FileChooserDialogImpl" timestamp="1625200649676">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="273" key="FileChooserDialogImpl/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1625200649676" />
+    <state width="1867" height="468" key="GridCell.Tab.0.bottom" timestamp="1625198737308">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="468" key="GridCell.Tab.0.bottom/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1625198737308" />
+    <state width="1867" height="468" key="GridCell.Tab.0.center" timestamp="1625198737308">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="468" key="GridCell.Tab.0.center/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1625198737308" />
+    <state width="1867" height="468" key="GridCell.Tab.0.left" timestamp="1625198737307">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="468" key="GridCell.Tab.0.left/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1625198737307" />
+    <state width="1867" height="468" key="GridCell.Tab.0.right" timestamp="1625198737308">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="468" key="GridCell.Tab.0.right/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1625198737308" />
+    <state width="1867" height="468" key="GridCell.Tab.1.bottom" timestamp="1625198737308">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="468" key="GridCell.Tab.1.bottom/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1625198737308" />
+    <state width="1867" height="468" key="GridCell.Tab.1.center" timestamp="1625198737308">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="468" key="GridCell.Tab.1.center/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1625198737308" />
+    <state width="1867" height="468" key="GridCell.Tab.1.left" timestamp="1625198737308">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="468" key="GridCell.Tab.1.left/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1625198737308" />
+    <state width="1867" height="468" key="GridCell.Tab.1.right" timestamp="1625198737308">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="468" key="GridCell.Tab.1.right/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1625198737308" />
+    <state x="292" y="174" key="new project wizard" timestamp="1625200650735">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="292" y="174" key="new project wizard/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1625200650735" />
+  </component>
+</project>

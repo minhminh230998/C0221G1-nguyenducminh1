@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--cách1-->
+<script>
+    let luong = parseInt(prompt("nhập số tiền lương:"));
+    let thueThuNhap = 0;
+    if (luong >= 15000000) {
+        thueThuNhap = luong / 100 * 20;
+    } else if (luong >= 7000000) {
+        thueThuNhap = luong / 100 * 10;
+    } else {
+        thueThuNhap = luong / 100 * 5;
+    }
+    document.write("Tiền thuế phải trả là:" + thueThuNhap);
+</script>
+<!--cách2-->
+<script>
+    let luong1 = parseInt(prompt("nhập số tiền lương:"));
+    let th = parseInt(prompt("1.Luong lơn hon 15000000 \n" +
+        "2.Luong lon hon 70000000 \n" +
+        "3.luong duoi 7 trieu"))
+    let thueThuNhap1 = 0;
+    switch (th) {
+        case 1:
+            thueThuNhap1 = luong1 / 100 * 20;
+            document.write("Tiền thuế phải trả là:" + thueThuNhap1);
+            break;
+        case 2:
+
+            thueThuNhap1 = luong1 / 100 * 10;
+            document.write("Tiền thuế phải trả là:" + thueThuNhap1);
+            break;
+
+    }
+</script>
+</body>
+</html>

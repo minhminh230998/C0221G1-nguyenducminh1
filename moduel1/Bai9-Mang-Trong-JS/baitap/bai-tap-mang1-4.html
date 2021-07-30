@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num=parseInt(prompt("Bạn muốn nhập bao nhiêu số:"));
+    let arr=new Array();
+    for (let i=0;i<num;i++){
+        arr[i]=prompt("nhập phần tử;");
+    }
+    let arr2=new Array();
+    for (let i=0;i<arr.length;i++){
+      arr2= arr.reverse().join();
+    }
+document.write(arr2);
+</script>
+</body>
+</html>

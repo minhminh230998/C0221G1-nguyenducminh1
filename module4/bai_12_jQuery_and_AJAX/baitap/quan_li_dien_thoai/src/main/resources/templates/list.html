@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>List Smartphone</title>
+    <link rel="stylesheet" href="../static/lib/css/bootstrap.css">
+    <script src="../static/lib/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../static/lib/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+
+<h1>Smartphone List</h1>
+<div class="container mt-4">
+    <div class="row w-50 mx-auto">
+        <div class="col-lg-12">
+            <h2>List student other</h2>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th scope="col">Product</th>
+                    <th scope="col">Model</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Delete</th>
+                    <th scope="col">Update</th>
+                </tr>
+                </thead>
+                <tbody id="tableList">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<form id="add-smartphone">
+    <table>
+        <td><input type="text" id="ipId" style="display: none" placeholder="id"></td>
+        <tr>
+            <td>Producer:</td>
+            <td><input type="text" id="ipProducer" placeholder="producer"></td>
+        </tr>
+        <tr>
+            <td>Model:</td>
+            <td><input type="text" id="ipModel" placeholder="model"></td>
+        </tr>
+        <tr>
+            <td>Price:</td>
+            <td><input type="text" id="ipPrice" placeholder="price"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Add" id="btnAdd" onclick="addNewSmartPhone()">
+                <input type="submit" value="Update" id="btnUpdate" onclick="updatePhone()" style="display: none">
+            </td>
+        </tr>
+    </table>
+</form>
+
+
+<script>
+    function listPhone() {
+        $.ajax({
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            type: "GET", //GET, DELETE, PUT...
+            url: "http://localhost:8080/smartphones/list",
+            success: function (resultSuccess) {
+                console.log("Success");
+                let resultHTML = "";
+                for (let i = 0; i < resultSuccess.length; i++) {
+                    resultHTML += "<tr>";
+                    resultHTML += "<td>" + resultSuccess[i].producer + "</td>";
+                    resultHTML += "<td>" + resultSuccess[i].model + "</td>";
+                    resultHTML += "<td>" + resultSuccess[i].price + "</td>";
+                    resultHTML += '<td><input type="submit" value="delete" onclick="deleteSmartPhone(' + resultSuccess[i].id + ')"></td>';
+                    resultHTML += '<td><input type="submit" value="update" onclick="updateSmartPhone(' + resultSuccess[i].id + ')"></td>';
+                    resultHTML += "</tr>";
+                }
+
+                console.log(resultHTML);
+                // innerHTML
+                $("#tableList").html(resultHTML);
+            },
+            error: function (resultError) {
+                console.log("Error: ");
+                console.log(resultError);
+            }
+        })
+    }
+
+    listPhone();
+
+    function addNewSmartPhone() {
+
+        let producer = $("#ipProducer").val();
+        let model = $("#ipModel").val();
+        let price = $("#ipPrice").val();
+
+        let phoneObj = {
+            producer: producer,
+            model: model,
+            price: price,
+        }
+
+        console.log(phoneObj);
+
+        $.ajax({
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            type: "POST", //GET, DELETE, PUT...
+            url: "http://localhost:8080/smartphones/create",
+            data: JSON.stringify(phoneObj),
+            success: function (resultSuccess) {
+                console.log(resultSuccess);
+            },
+            error: function (resultError) {
+                console.log(resultError);
+            }
+        });
+        listPhone();
+    };
+
+    function deleteSmartPhone(id) {
+        $.ajax({
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            type: "DELETE", //GET, DELETE, PUT...
+            url: "http://localhost:8080/smartphones/delete/" + id,
+            success: function (resultSuccess) {
+                console.log(resultSuccess);
+            },
+            error: function (resultError) {
+                console.log(resultError);
+            }
+        });
+        listPhone();
+    }
+
+    function updateSmartPhone(id) {
+        $.ajax({
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            type: "GET", //GET, DELETE, PUT...
+            url: "http://localhost:8080/smartphones/" + id,
+            success: function (resultSuccess) {
+                console.log(resultSuccess);
+                document.getElementById("ipProducer").value = resultSuccess.producer;
+                document.getElementById("ipModel").value = resultSuccess.model;
+                document.getElementById("ipPrice").value = resultSuccess.price;
+                document.getElementById("ipId").value = resultSuccess.id;
+                $("#btnUpdate").css("display", "inline-block");
+                $("#btnAdd").css("display", "none");
+            },
+            error: function (resultError) {
+                console.log(resultError);
+            }
+        });
+        listPhone();
+    }
+
+    function updatePhone() {
+        alert("Update successfully");
+        let id = $("#ipId").val()
+        let producer = $("#ipProducer").val();
+        let model = $("#ipModel").val();
+        let price = $("#ipPrice").val();
+
+        let phoneObj = {
+            id: id,
+            producer: producer,
+            model: model,
+            price: price,
+
+        }
+        console.log(phoneObj);
+
+        $.ajax({
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            type: "POST", //GET, DELETE, PUT...
+            url: "http://localhost:8080/smartphones/create",
+            data: JSON.stringify(phoneObj),
+            success: function (resultSuccess) {
+                console.log(resultSuccess);
+            },
+            error: function (resultError) {
+                console.log(resultError);
+            }
+        });
+        $("#btnUpdate").css("display", "inline-block");
+        $("#btnAdd").css("display", "inline-block");
+        listPhone();
+    }
+</script>
+</body>
+</html>

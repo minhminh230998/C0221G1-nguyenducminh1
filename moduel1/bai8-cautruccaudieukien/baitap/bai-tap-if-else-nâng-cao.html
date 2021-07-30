@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>if else nâng cao</title>
+</head>
+<body>
+<!--bài1-->
+<h1>Chuyển từ độ C sang độ F</h1>
+<p>Nhập độ C</p>
+<br>
+<input type="number" id="c">
+<button type="button" onclick="kq()">Kết quả</button>
+<script>
+    function kq() {
+        let doC = parseInt(document.getElementById("c").value);
+        let doF = doC*9/5+32
+        alert("Độ F =" +doF+"F");
+    }
+</script>
+<!--bài2-->
+<h1>Chuyển từ m sang feed</h1>
+<p>Nhập số m</p>
+<br>
+<input type="number" id="m">
+<button type="button" onclick="kq()">Kết quả</button>
+<script>
+    function kq() {
+        let met = parseInt(document.getElementById("m").value);
+        let feed = met * 3.2808;
+        alert(+met+"m ="+feed+"feed");
+    }
+</script>
+<!--bai3-->
+<h2>Tính diện tích hình vuông</h2>
+<p>Cạnh bằng(m)</p>
+<br>
+<input type="number" id="cm">
+<button type="button" onclick="kq()">Kết quả</button>
+<script>
+    function kq() {
+        let cmet = parseInt(document.getElementById("cm").value);
+        let S = cmet**2;
+        alert("hình vuông có diện tích =" + S + "m^2");
+    }
+    </script>
+<!--bài4-->
+<h2>Tính diện tích hình chữ nhật</h2>
+<p>chiều rộng là (m)</p>
+<input type="number" id="rong">
+<br>
+<p>chiều dài là (m)</p>
+<input type="number" id="dai">
+<br>
+<br>
+<button type="button" onclick="kq()">Kết quả</button>
+<script>
+    function kq() {
+        let cr = parseInt(document.getElementById("rong").value);
+        let cd = parseInt(document.getElementById("dai").value);
+        let s = cr*cd;
+        alert("hình chữ nhật có diện tích =" + s + "m^2");
+    }
+</script>
+<!--bài5-->
+<h2> Tính diện tích tam giác vuông</h2>
+<p>cạnh bên a (m)</p>
+<input type="number" id="canha">
+<br>
+<p>cạnh bên b (m)</p>
+<input type="number" id="canhb">
+<br>
+<br>
+<button type="button" onclick="kq()">Kết quả</button>
+<script>
+    function kq() {
+        let a = parseInt(document.getElementById("canha").value);
+        let b = parseInt(document.getElementById("canhb").value);
+        let dt = a*b/2;
+        alert("tam giác vuông có diện tích =" + dt + "m^2");
+    }
+</script>
+<!--bài6-->
+<h2>Phương trình bật một</h2>
+<p>ax+b=0</p>
+<p>Nhập a</p>
+<input type="number" id="num5">
+<br>
+<p>Nhập b</p>
+<input type="number" id="num6">
+<br>
+<br>
+<button type="button" onclick="kq()">Kết quả</button>
+<script>
+    function kq() {
+        let a=parseInt(document.getElementById("num5").value);
+        let b=parseInt(document.getElementById("num6").value);
+        let x=-b/a;
+        if (a=0){
+            if (b=o){
+                alert("Phương trình có vô số nghiệm")
+            }else {
+                alert("Phương trình vô nghiệm")
+            }
+        }else {
+            alert("Phương trình có nghiệm là "+ x)
+        }
+
+    }
+</script>
+<!--bài7-->
+<h2>Tuổi của 1 người</h2>
+<p>Nhập vào</p>
+<input type="number" id="tuoi">
+<br>
+<br>
+<button type="button" onclick="kq()">Kết quả</button>
+<script>
+    function kq() {
+        let t = parseInt(document.getElementById("tuoi").value);
+        if (0<t && t<120){
+            alert("Đây là tuổi của con người")
+        }else {
+            alert("Đây không phải tuổi của con người")
+        }
+    }
+</script>
+<!--bài8-->
+<h2>Cạnh của 1 tam giác</h2>
+<p>Nhập vào cạnh a</p>
+<input type="number" id="num7">
+<p>Nhập vào cạnh b</p>
+<input type="number" id="num8">
+<p>Nhập vào cạnh c</p>
+<input type="number" id="num9">
+<button type="button" onclick="kq()">Kết quả</button>
+<script>
+    function kq() {
+        let ca=parseInt(document.getElementById("num7").value);
+        let cb=parseInt(document.getElementById("num8").value);
+        let cc=parseInt(document.getElementById("num9").value);
+        if (ca+cb+cc>0){
+            if (ca+cb>cc){
+                if (ca+cc>cb){
+                    if (cb+cc>ca){
+                        alert("đây là 1 tam giác")
+                    }else {
+                        alert("đây không phải là 1 tam giác")
+                    }
+                }else {
+                    alert("đây không phải là 1 tam giác")
+                }
+            }else {
+                alert("đây không phải là 1 tam giác")
+            }
+        }else {
+            alert("đây không phải là 1 tam giác")
+        }
+    }
+</script>
+<!--bai9-->
+<h2>Tính giá điện</h2>
+<p>Số chữ đã sử dụng</p>
+<input type="number" id="num10">
+<input type="button" value="kết quả" onclick="kq()">
+<script>
+    function kq() {
+        let num10 = parseInt(document.getElementById("num10").value);
+        let num11;
+        if (num10 < 100) {
+            num11 = num10 * 2500;
+        } else if (num10 < 300) {
+            num11 = num10 * 3000;
+        } else {
+            num11 = num10 * 3500
+        }
+            alert("Tổng tiền là" + num11 + "VND");
+    }
+</script>
+<!--bai10-->
+<h2>Tính thuế thu nhập cá nhân</h2>
+<p>Số tiền thu nhập</p>
+<input type="number" id="num12">
+<input type="button" value="kết quả" onclick="kq()">
+<script>
+    function kq() {
+        let num12 = parseInt(document.getElementById("num12").value);
+        let num13;
+        if (num12 < 20000000) {
+            num13 = num12 / 100 * 10;
+        } else if (num12 < 100000000) {
+            num13 = num12 / 100 * 20;
+        } else {
+            num13 = num12 / 100 * 30;
+        }
+        alert("Tổng tiền thuế " + num13 + "VND");
+    }
+</script>
+<!--bài11-->
+<h1>Lãi xuất ngân hàng</h1>
+<
+</body>
+</html>
