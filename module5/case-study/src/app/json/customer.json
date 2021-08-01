@@ -1,0 +1,264 @@
+{
+  "customer": [
+    {
+      "name": "MinhMinh",
+      "id": "KH-1119",
+      "dateOfBirth": "2021-07-01",
+      "gender": "Nam",
+      "idCard": "0000000",
+      "phoneNumber": null,
+      "email": "minh@gmail.com",
+      "customerType": {
+        "id": 5,
+        "name": "Member"
+      },
+      "address": "Quảng Nam"
+    },
+    {
+      "name": "Anh",
+      "id": "KH-1111",
+      "dateOfBirth": "2000-08-02",
+      "gender": "Nữ",
+      "idCard": "m",
+      "phoneNumber": null,
+      "email": "minh@gmail.com",
+      "customerType": {
+        "id": 3,
+        "name": "Gold"
+      },
+      "address": "m"
+    },
+    {
+      "name": "Nam",
+      "id": "KH-1111",
+      "dateOfBirth": "2000-08-02",
+      "gender": "Nữ",
+      "idCard": "m",
+      "phoneNumber": null,
+      "email": "minh@gmail.com",
+      "customerType": {
+        "id": 3,
+        "name": "Gold"
+      },
+      "address": "m"
+    },
+    {
+      "name": "Tú",
+      "id": "KH-1111",
+      "dateOfBirth": "2000-08-02",
+      "gender": "Nữ",
+      "idCard": "m",
+      "phoneNumber": null,
+      "email": "minh@gmail.com",
+      "customerType": {
+        "id": 3,
+        "name": "Gold"
+      },
+      "address": "m"
+    },
+    {
+      "name": "Dương",
+      "id": "KH-1111",
+      "dateOfBirth": "2000-08-02",
+      "gender": "Nữ",
+      "idCard": "m",
+      "phoneNumber": null,
+      "email": "minh@gmail.com",
+      "customerType": {
+        "id": 3,
+        "name": "Gold"
+      },
+      "address": "m"
+    },
+    {
+      "name": "Dược",
+      "id": "KH-1111",
+      "dateOfBirth": "2000-08-02",
+      "gender": "Nữ",
+      "idCard": "m",
+      "phoneNumber": null,
+      "email": "minh@gmail.com",
+      "customerType": {
+        "id": 3,
+        "name": "Gold"
+      },
+      "address": "m"
+    },
+    {
+      "name": "Độc",
+      "id": "KH-1111",
+      "dateOfBirth": "2000-08-02",
+      "gender": "Nữ",
+      "idCard": "m",
+      "phoneNumber": null,
+      "email": "minh@gmail.com",
+      "customerType": {
+        "id": 3,
+        "name": "Gold"
+      },
+      "address": "m"
+    },
+    {
+      "name": "Ác",
+      "id": "KH-1111",
+      "dateOfBirth": "2000-08-02",
+      "gender": "Nữ",
+      "idCard": "m",
+      "phoneNumber": null,
+      "email": "minh@gmail.com",
+      "customerType": {
+        "id": 3,
+        "name": "Gold"
+      },
+      "address": "m"
+    },
+    {
+      "name": "Gần",
+      "id": "KH-1111",
+      "dateOfBirth": "2000-08-02",
+      "gender": "Nữ",
+      "idCard": "m",
+      "phoneNumber": null,
+      "email": "minh@gmail.com",
+      "customerType": {
+        "id": 3,
+        "name": "Gold"
+      },
+      "address": "m"
+    },
+    {
+      "name": "Xa",
+      "id": "KH-1111",
+      "dateOfBirth": "2000-08-02",
+      "gender": "Nữ",
+      "idCard": "m",
+      "phoneNumber": null,
+      "email": "minh@gmail.com",
+      "customerType": {
+        "id": 3,
+        "name": "Gold"
+      },
+      "address": "m"
+    },
+    {
+      "name": "Trung",
+      "id": "KH-1111",
+      "dateOfBirth": "2000-08-02",
+      "gender": "Nữ",
+      "idCard": "m",
+      "phoneNumber": null,
+      "email": "minh@gmail.com",
+      "customerType": {
+        "id": 3,
+        "name": "Gold"
+      },
+      "address": "m"
+    },
+    {
+      "name": "Khoa",
+      "id": "KH-1111",
+      "dateOfBirth": "2000-08-02",
+      "gender": "Nữ",
+      "idCard": "m",
+      "phoneNumber": null,
+      "email": "minh@gmail.com",
+      "customerType": {
+        "id": 3,
+        "name": "Gold"
+      },
+      "address": "m"
+    },
+    {
+      "name": "Đạt",
+      "id": "KH-1111",
+      "dateOfBirth": "2000-08-02",
+      "gender": "Nữ",
+      "idCard": "m",
+      "phoneNumber": null,
+      "email": "minh@gmail.com",
+      "customerType": {
+        "id": 3,
+        "name": "Gold"
+      },
+      "address": "m"
+    },
+    {
+      "name": "Thúy",
+      "id": "KH-1111",
+      "dateOfBirth": "2000-08-02",
+      "gender": "Nữ",
+      "idCard": "m",
+      "phoneNumber": null,
+      "email": "minh@gmail.com",
+      "customerType": {
+        "id": 3,
+        "name": "Gold"
+      },
+      "address": "m"
+    },
+    {
+      "name": "Toàn",
+      "id": "KH-1111",
+      "dateOfBirth": "2000-08-02",
+      "gender": "Nữ",
+      "idCard": "m",
+      "phoneNumber": null,
+      "email": "minh@gmail.com",
+      "customerType": {
+        "id": 3,
+        "name": "Gold"
+      },
+      "address": "m"
+    },
+    {
+      "name": "Tâm",
+      "id": "KH-1111",
+      "dateOfBirth": "2000-08-02",
+      "gender": "Nữ",
+      "idCard": "m",
+      "phoneNumber": null,
+      "email": "minh@gmail.com",
+      "customerType": {
+        "id": 3,
+        "name": "Gold"
+      },
+      "address": "m"
+    },
+    {
+      "name": "Ban",
+      "id": "KH-1111",
+      "dateOfBirth": "2000-08-02",
+      "gender": "Nữ",
+      "idCard": "m",
+      "phoneNumber": null,
+      "email": "minh@gmail.com",
+      "customerType": {
+        "id": 3,
+        "name": "Gold"
+      },
+      "address": "m"
+    }
+  ],
+  "customerType": [
+    {
+      "id": 1,
+      "name": "Diamond"
+    },
+    {
+      "id": 2,
+      "name": "Platinium"
+    },
+    {
+      "id": 3,
+      "name": "Gold"
+    },
+    {
+      "id": 4,
+      "name": "Silver"
+    },
+    {
+      "id": 5,
+      "name": "Member"
+    }
+  ]
+}

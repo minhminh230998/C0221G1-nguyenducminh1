@@ -1,0 +1,50 @@
+<h1>Tạo sản phẩm mới</h1>
+<form [formGroup]="customerForm" (ngSubmit)="submit()">
+  <table>
+    <tr>
+      <td>Mã khách hàng</td>
+      <td><input type="text" formControlName="id"></td>
+    </tr>
+    <tr>
+      <td>Tên khách hàng:</td>
+      <td><input type="text" formControlName="name"></td>
+    </tr>
+    <tr>
+      <td>Ngày sinh</td>
+      <td><input type="date" formControlName="dateOfBirth"></td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td><input type="text" formControlName="email"></td>
+    </tr>
+
+    <tr>
+      <td>Nơi sinh sống</td>
+      <td><input type="text" formControlName="address"></td>
+    </tr>
+
+    <tr>
+      <td>Số CMND</td>
+      <td><input type="text" formControlName="idCard"></td>
+    </tr>
+    <tr>
+      <td>Loại Khách Hàng</td>
+      <td><select formControlName="customerType" [compareWith]="compareFn" >
+        <option  *ngFor="let customerType of customerTypes"  [ngValue]="customerType" >{{customerType.name}}</option>
+      </select></td>
+    </tr>
+    <tr>
+      <td>Giới tính</td>
+      <td><select formControlName="gender" >
+        <option   value="Nam" >Nam</option>
+        <option   value="Nữ" >Nữ</option>
+      </select></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <button>Tạo mới</button>
+      </td>
+    </tr>
+  </table>
+</form>

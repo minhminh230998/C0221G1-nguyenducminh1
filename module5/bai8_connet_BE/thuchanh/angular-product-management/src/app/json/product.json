@@ -1,0 +1,32 @@
+{
+  "product": [
+    {
+      "name": "1",
+      "price": 1,
+      "description": "1",
+      "category": {
+        "name": "Nokia",
+        "id": 3
+      },
+      "id": 1
+    }
+  ],
+  "Category": [
+    {
+      "name": "Iphone",
+      "id": 1
+    },
+    {
+      "name": "SamSung",
+      "id": 2
+    },
+    {
+      "name": "Nokia",
+      "id": 3
+    },
+    {
+      "name": "Galaxy",
+      "id": 4
+    }
+  ]
+}

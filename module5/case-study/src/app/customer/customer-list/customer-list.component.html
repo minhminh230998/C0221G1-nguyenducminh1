@@ -1,0 +1,59 @@
+
+  <h1 class="col-lg-12 text-center"> List Customer</h1>
+  <div class="container mt-4 d-flex justify-content-between">
+    <div>
+      <a (click)="openDialogCreate()" class="btn btn-info  ">Create New Customer</a>
+    </div>
+    <div>
+      <label class="mr-2 font-weight-bold">from</label>
+      <input class="search mr-2" placeholder="DateFrom" type="date" [(ngModel)]="dateFrom" name="search">
+      <label class="mr-2 font-weight-bold">to</label>
+      <input class="search mr-2" placeholder="DateTo" type="date" [(ngModel)]="dateTo" name="search">
+      <input class="search" placeholder="Search" type="text" [(ngModel)]="searchText" name="search">
+      <button class="btn btn-success ml-3 " (click)="search()">Search</button>
+    </div>
+  </div>
+  <table class="table  table-hover m">
+    <thead>
+    <tr>
+      <th scope="col" >#</th>
+      <th scope="col" (click)="sort('id')">Customer ID <i class="fa fa-sort"></i></th>
+      <th scope="col" (click)="sort('name')">Customer Name <i class="fa fa-sort"></i></th>
+      <th scope="col">Customer Date of Birth</th>
+      <th scope="col">Customer ID Card</th>
+      <th scope="col">Customer Phone</th>
+      <th scope="col">Customer Email</th>
+      <th scope="col">Customer Address</th>
+      <th scope="col">Customer Type</th>
+      <th scope="col" colspan="3" class="text-center">Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let customer of customers|orderBy:key:a | paginate: config; index as i">
+      <td scope="col"  >{{i + 1}}</td>
+      <td scope="col">{{customer.id}}</td>
+      <td scope="col">{{customer.name}}</td>
+      <td scope="col">{{customer.dateOfBirth}}</td>
+      <td scope="col">{{customer.idCard}}</td>
+      <td scope="col">{{customer.phoneNumber}}</td>
+      <td scope="col">{{customer.email}}</td>
+      <td scope="col">{{customer.address}}</td>
+      <td scope="col">{{customer.customerType.name}}</td>
+      <td scope="col">
+<!--        <button [routerLink]="['/customer/view',customer.id]" class="btn-info">View</button>-->
+<!--      </td>-->
+<!--      <td scope="col">-->
+        <button (click)="openDialogEdit(customer.id)" class="btn-warning">Edit</button>
+      </td>
+      <td scope="col">
+        <button (click)="openDialog(customer.id)" class="btn-danger">Delete</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
+
+
+
+
+
