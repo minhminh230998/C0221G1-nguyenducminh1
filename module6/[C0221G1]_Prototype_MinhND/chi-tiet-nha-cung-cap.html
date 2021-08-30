@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chi tiết nhà cung cấp</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header" class="d-flex justify-content-between">
+    <div id="list">
+        <a href="#"><i class="fa fa-bars"></i></a>
+    </div>
+    <ul id="nav">
+        <li>
+            <a href="https://github.com/">Home</a>
+        </li>
+        <li>
+            <a href="">
+                Quản lý bán hàng
+                <i class="icon1 fa fa-caret-down ml-2"></i>
+            </a>
+            <ul class="subnav">
+                <li><a href="">Bán lẻ</a></li>
+                <li><a href="">Bán hàng</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="">
+                Quản lý kho bãi
+                <i class="icon1 fa fa-caret-down ml-2"></i>
+            </a>
+            <ul class="subnav">
+                <li><a href="">Quản lý nhập kho</a></li>
+                <li><a href="">Quản lý xuất kho</a></li>
+                <li><a href="">Danh sách thuốc</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="">
+                Quản lý thông tin
+                <i class="icon1 fa fa-caret-down ml-2"></i>
+            </a>
+            <ul class="subnav">
+                <li><a href="">Khách hàng</a></li>
+                <li><a href="danh-sach-nha-cung-cap.html">Nhà cung cấp</a></li>
+                <li><a href="">Nhân viên</a></li>
+                <li><a href="">Toa thuốc</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="">
+                Tra cứu
+            </a>
+
+        </li>
+        <li>
+            <a href="" id="bao-cao">
+                Báo cáo
+                <i class="icon1 fa fa-caret-down ml-2"></i>
+            </a>
+            <ul class="subnav">
+                <li><a href="">Báo cáo</a></li>
+                <li><a href="">Biểu đồ Thống kê</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="user d-flex">
+        <p id="user-name">Admin</p>
+        <img id="user-image" src="./image/user-image.jpg" alt="">
+    </div>
+</div>
+<div class="content mb-5 mt-5">
+    <div class="row">
+        <div id="sidebar" class="col-2">
+            <div class="menu-sub d-flex justify-content-center mt-2 mb-2">
+                <h5>Chọn nhanh</h5>
+            </div>
+            <div>
+                <ul class="subnav-item">
+                    <li class="border-top">
+                        <i class="icon-sidebar fa fa-file-text-o text-light"></i>
+                        <a href="">Báo cáo</a>
+                    </li>
+                    <li>
+                        <i class="icon-sidebar fa fa-database"></i>
+                        <a href="#">Nhập kho</a>
+                    </li>
+                    <li>
+                        <i class="icon-sidebar fa fa-reply text-warning"></i>
+                        <a href="#">Xuất hoàn trả</a>
+                    </li>
+                    <li>
+                        <i class="icon-sidebar fa fa-times text-violet"></i>
+                        <a href="#">Xuất hủy</a>
+                    </li>
+                    <li class="mt-3 border-top">
+                        <i class="icon-sidebar fa fa-search text-light"></i>
+                        <a href="">Tra cứu nhanh</a>
+                    </li>
+                    <li>
+                        <i class="icon-sidebar fa fa-archive text-light"></i>
+                        <a href="#">Hệ thống kho bãi</a>
+                    </li>
+                    <li class="mt-3 border-top">
+                        <i class="icon-sidebar fa fa-clipboard"></i>
+                        <a href="#">Nhật ký bán hàng</a>
+                    </li>
+                    <li class="mt-3 border-top">
+                        <i class="icon-sidebar fa fa-sign-out text-warning "></i>
+                        <a href="#">Đăng xuất</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 right-content ">
+            <div class="row white-block"></div>
+
+            <!--        nơi đổ dữ liệu router-outlet              -->
+
+            <div class="container mt-3">
+
+                <div class="modal-body">
+                    <div class="container" style="background: #567FEA;height: 50px"><h2
+                            style="text-align: center;line-height: 50px">CHỈNH SỬA NHÀ CUNG CẤP</h2>
+                    </div>
+                    <fieldset class="scheduler-border">
+                        <legend class="scheduler-border">Thông tin chi tiết</legend>
+                        <form>
+                            <div class="row">
+                                <label class="label-text col-2 ">Mã nhà cung cấp</label>
+                                <div class="col-3">
+                                    <input value="Vinamed" disabled class="form-control " type="text">
+                                </div>
+                                <label class="label-text col">Tên nhà cung cấp</label>
+                                <div class="col-5">
+                                    <input value="Công ty Vinamed" disabled class="form-control" type="text">
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <label class="label-text col-2 ">Số điện thoại</label>
+                                <div class="col-3">
+                                    <input value="0891361699" disabled class="form-control " type="text">
+                                </div>
+                                <label class="label-text col">Địa chỉ</label>
+                                <div class="col-5">
+                                    <input value="Hai Bà Trưng, Hà Nội" disabled class="form-control" type="text">
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                            <label class="label-text col-2 ">Công nợ</label>
+                            <div class="col-3">
+                                <input value="1200000" disabled class="form-control " type="text">
+                            </div>
+                            <label class="label-text col">Ghi chú</label>
+                            <div class="col-5">
+                                <input disabled class="form-control" type="text">
+                            </div>
+                        </div>
+                            <div class="row mt-3">
+
+                                <label class="label-text col-lg-2">Email</label>
+                                <div class="col-lg-10">
+                                    <input value="Vinamed@gmail.com" disabled class="form-control" type="text">
+                                </div>
+                            </div>
+
+                        </form>
+                    </fieldset>
+
+
+                    <fieldset class="scheduler-border">
+                        <legend class="scheduler-border">Bộ lọc</legend>
+                        <form class=" p-3">
+
+                            <div class="row">
+
+                                <label for="startDate" class="col-lg-2">Từ ngày</label>
+                                <input id="startDate" class="col-lg-3" style="height: 30px;width: 130px"
+                                       type="date"
+                                       placeholder="Tên nhà...">
+
+
+                                <label for="endDate" class="col-lg-2 ">Đến ngày</label>
+                                <input id="endDate" class="col-lg-3" style="height: 30px;width: 130px"
+                                       type="date"
+                                       placeholder="Tên nhà...">
+
+                            </div >
+                                <div class="row mt-3">
+                                    <label for="startTime" class=" col-lg-2">Từ giờ</label>
+                                    <input id="startTime" class=" col-lg-3" style="height: 30px;width: 130px" type="time"
+                                           placeholder="Tên nhà...">
+                                    <label for="endTime" class=" col-lg-2 ">Đến giờ</label>
+                                    <input id="endTime" class="col-lg-3" style="height: 30px;width: 130px" type="time"
+                                           placeholder="Tên nhà...">
+
+                                    <div class="col-lg-2"><button style="height: 30px"  class="   btn ve " type="button"><i class="fa fa-search"
+                                                                                      aria-hidden="true"></i>
+                                        Tìm kiếm
+                                    </button></div>
+
+
+                                </div>
+
+                        </form>
+                    </fieldset>
+                </div>
+
+                <div class="container pb-3">
+                    <fieldset class="scheduler-border">
+                        <legend class="scheduler-border">Danh sánh</legend>
+                            <table class="table table-bordered table-striped  ">
+                                <thead class="thead">
+                                <tr class="ve">
+
+                                    <th>Mã hóa đơn</th>
+                                    <th>Số chứng từ</th>
+                                    <th>Ngày lập</th>
+                                    <th>Giờ lập</th>
+                                    <th>Tổng tiền</th>
+                                    <th>Nợ hóa đơn</th>
+
+
+                                </tr>
+                                </thead>
+
+                                <tbody >
+
+                                <tr  id="btn1">
+                                    <td>HDN001</td>
+                                    <td class="ct">352121</td>
+                                    <td class="ct" class="ct">12/12/2000</td>
+                                    <td class="ct">07:00</td>
+                                    <td class="ct">1200000</td>
+                                    <td class="ct">120000</td>
+                                </tr>
+                                <tr  id="btn2">
+                                    <td>HDN002</td>
+                                    <td class="ct">352122</td>
+                                    <td class="ct">12/12/2001</td>
+                                    <td class="ct">07:00</td>
+                                    <td class="ct">1200000</td>
+                                    <td class="ct">1200000</td>
+                                </tr>
+                                <tr  id="btn3">
+                                    <td>HDN003</td>
+                                    <td class="ct">352121</td>
+                                    <td class="ct">12/12/2002</td>
+                                    <td class="ct">07:00</td>
+                                    <td class="ct">1200000</td>
+                                    <td class="ct">120000</td>
+                                </tr>
+                                <tr  id="btn4">
+                                    <td>HDN004</td>
+                                    <td class="ct">352111</td>
+                                    <td class="ct">12/12/2003</td>
+                                    <td class="ct">07:00</td>
+                                    <td class="ct">1200000</td>
+                                    <td class="ct">120000</td>
+                                </tr>
+                                <tr  id="btn5">
+                                    <td>HDN005</td>
+                                    <td class="ct">352188</td>
+                                    <td class="ct">12/12/2004</td>
+                                    <td class="ct">07:00</td>
+                                    <td class="ct">1200000</td>
+                                    <td class="ct">12000</td>
+                                </tr>
+                                <tr  id="btn6">
+                                    <td>HDN006</td>
+                                    <td class="ct">352199</td>
+                                    <td class="ct">12/12/2005</td>
+                                    <td class="ct">07:00</td>
+                                    <td class="ct">1200000</td>
+                                    <td class="ct">12000</td>
+                                </tr>
+
+
+
+
+
+
+                                </tbody>
+                            </table>
+                            <div class="d-flex justify-content-end">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination">
+                                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+
+                    </fieldset>
+
+                    <div class="container-fluid mt-3">
+                        <div class="row">
+                            <button class="col-3 a btn btn-info" data-toggle="modal" data-target="#exampleModal"><i
+                                    class="fa fa-window-restore" aria-hidden="true"></i> Thông tin
+                                chi tiết
+                            </button>
+                            <div
+                                    class="col-lg-7"></div>
+                            <div class="col-lg-2 text-right">
+                                <a href="danh-sach-nha-cung-cap.html" >
+                                    <button type="button" class="btn ve" data-dismiss="modal"><i class="icon-sidebar fa fa-reply "></i>
+                                        Trở về
+                                    </button>
+                                </a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--modal show-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container ">
+                            <form>
+                                <div class="">
+                                    <div class="container" style="background: #567FEA;height: 50px"><h2
+                                            style="text-align: center;line-height: 50px">THÔNG TIN CHI TIẾT </h2>
+                                    </div>
+                                    <div class="row mt-5">
+                                        <label class="label-text col-3 ">Mã nhà cung cấp</label>
+                                        <div class="col-9">
+                                            <input disabled class="form-control m-0" type="text">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-3 mt-3">
+                                        <label class="label-text col-3">Mã hóa đơn</label>
+                                        <div class="col-9">
+                                            <input disabled class="form-control" type="text">
+
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3 mt-3">
+                                        <label class="label-text col-3">Số chứng từ</label>
+                                        <div class="col-9">
+                                            <input disabled class="form-control" type="text">
+
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3 mt-3">
+                                        <label class="label-text col-3">Ngày lập</label>
+                                        <div class="col-9">
+                                            <input disabled class="form-control" type="text">
+
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3 mt-3">
+                                        <label class="label-text col-3">Giờ lập</label>
+                                        <div class="col-9">
+                                            <input disabled class="form-control" type="text">
+
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3 mt-3">
+                                        <label class="label-text col-3">Tổng tiền</label>
+                                        <div class="col-9">
+                                            <input disabled class="form-control" type="text">
+
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3 mt-3">
+                                        <label class="label-text col-3">Nợ hóa đơn</label>
+                                        <div class="col-9">
+                                            <input disabled class="form-control" type="text">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn ve" data-dismiss="modal"><i class="icon-sidebar fa fa-reply"></i>
+                                Trở về
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<div id="footer" >
+    <div class="social-list">
+        <a class="mr-2" href=""><i class="icon-footer fa fa-facebook"></i></a>
+        <a class="ml-2" href=""><i class="icon-footer fa fa-google"></i></a>
+
+    </div>
+</div>
+
+</div>
+<script>
+    $(document).ready(function() {
+        $("#btn1").click(function () {
+            $("#btn1").attr("style", "background-color:#62b8ff !important");
+            $("#btn2").attr("style", "background-color: null");
+            $("#btn3").attr("style", "background-color: null");
+            $("#btn4").attr("style", "background-color: null");
+            $("#btn5").attr("style", "background-color: null");
+            $("#btn6").attr("style", "background-color: null");
+            $("#btn7").attr("style", "background-color: null");
+            $("#btn8").attr("style", "background-color: null");
+            $("#btn9").attr("style", "background-color: null");
+            $("#btn10").attr("style", "background-color: null");
+        });
+        $("#btn2").click(function () {
+            $("#btn1").attr("style", "background-color: null");
+            $("#btn2").attr("style", "background-color: #62b8ff !important");
+            $("#btn3").attr("style", "background-color: null");
+            $("#btn4").attr("style", "background-color: null");
+            $("#btn5").attr("style", "background-color: null");
+            $("#btn6").attr("style", "background-color: null");
+            $("#btn7").attr("style", "background-color: null");
+            $("#btn8").attr("style", "background-color: null");
+            $("#btn9").attr("style", "background-color: null");
+            $("#btn10").attr("style", "background-color: null");
+        });
+        $("#btn3").click(function () {
+            $("#btn1").attr("style", "background-color: null");
+            $("#btn2").attr("style", "background-color: null");
+            $("#btn3").attr("style", "background-color: #62b8ff !important");
+            $("#btn4").attr("style", "background-color: null");
+            $("#btn5").attr("style", "background-color: null");
+            $("#btn6").attr("style", "background-color: null");
+            $("#btn7").attr("style", "background-color: null");
+            $("#btn8").attr("style", "background-color: null");
+            $("#btn9").attr("style", "background-color: null");
+            $("#btn10").attr("style", "background-color: null");
+        });
+        $("#btn4").click(function () {
+            $("#btn1").attr("style", "background-color: null");
+            $("#btn2").attr("style", "background-color: null");
+            $("#btn3").attr("style", "background-color: null");
+            $("#btn4").attr("style", "background-color: #62b8ff !important");
+            $("#btn5").attr("style", "background-color: null");
+            $("#btn6").attr("style", "background-color: null");
+            $("#btn7").attr("style", "background-color: null");
+            $("#btn8").attr("style", "background-color: null");
+            $("#btn9").attr("style", "background-color: null");
+            $("#btn10").attr("style", "background-color: null");
+        });
+        $("#btn5").click(function () {
+            $("#btn1").attr("style", "background-color: null");
+            $("#btn2").attr("style", "background-color: null");
+            $("#btn3").attr("style", "background-color: null");
+            $("#btn4").attr("style", "background-color: null");
+            $("#btn5").attr("style", "background-color: #62b8ff !important");
+            $("#btn6").attr("style", "background-color: null");
+            $("#btn7").attr("style", "background-color: null");
+            $("#btn8").attr("style", "background-color: null");
+            $("#btn9").attr("style", "background-color: null");
+            $("#btn10").attr("style", "background-color: null");
+        });
+        $("#btn6").click(function () {
+            $("#btn1").attr("style", "background-color: null");
+            $("#btn2").attr("style", "background-color: null");
+            $("#btn3").attr("style", "background-color: null");
+            $("#btn4").attr("style", "background-color: null");
+            $("#btn5").attr("style", "background-color: null");
+            $("#btn6").attr("style", "background-color: #62b8ff !important");
+            $("#btn7").attr("style", "background-color: null");
+            $("#btn8").attr("style", "background-color: null");
+            $("#btn9").attr("style", "background-color: null");
+            $("#btn10").attr("style", "background-color: null");
+        });
+        $("#btn7").click(function () {
+            $("#btn1").attr("style", "background-color: null");
+            $("#btn2").attr("style", "background-color: null");
+            $("#btn3").attr("style", "background-color: null");
+            $("#btn4").attr("style", "background-color: null");
+            $("#btn5").attr("style", "background-color: null");
+            $("#btn6").attr("style", "background-color: null");
+            $("#btn7").attr("style", "background-color: #62b8ff !important");
+            $("#btn8").attr("style", "background-color: null");
+            $("#btn9").attr("style", "background-color: null");
+            $("#btn10").attr("style", "background-color: null");
+        });
+        $("#btn8").click(function () {
+            $("#btn1").attr("style", "background-color: null");
+            $("#btn2").attr("style", "background-color: null");
+            $("#btn3").attr("style", "background-color: null");
+            $("#btn4").attr("style", "background-color: null");
+            $("#btn5").attr("style", "background-color: null");
+            $("#btn6").attr("style", "background-color: null");
+            $("#btn7").attr("style", "background-color: null");
+            $("#btn8").attr("style", "background-color: #62b8ff !important");
+            $("#btn9").attr("style", "background-color: null");
+            $("#btn10").attr("style", "background-color: null");
+        }); $("#btn9").click(function () {
+            $("#btn1").attr("style", "background-color: null");
+            $("#btn2").attr("style", "background-color: null");
+            $("#btn3").attr("style", "background-color: null");
+            $("#btn4").attr("style", "background-color: null");
+            $("#btn5").attr("style", "background-color: null");
+            $("#btn6").attr("style", "background-color: null");
+            $("#btn7").attr("style", "background-color: null");
+            $("#btn8").attr("style", "background-color: null");
+            $("#btn9").attr("style", "background-color:#62b8ff !important");
+            $("#btn10").attr("style", "background-color: null");
+        }); $("#btn10").click(function () {
+            $("#btn1").attr("style", "background-color: null");
+            $("#btn2").attr("style", "background-color: null");
+            $("#btn3").attr("style", "background-color: null");
+            $("#btn4").attr("style", "background-color: null");
+            $("#btn5").attr("style", "background-color: null");
+            $("#btn6").attr("style", "background-color: null");
+            $("#btn7").attr("style", "background-color: null");
+            $("#btn8").attr("style", "background-color: null");
+            $("#btn9").attr("style", "background-color: null");
+            $("#btn10").attr("style", "background-color: #62b8ff !important");
+        });
+    });
+</script>
+</body>
+</html>
+
+
+

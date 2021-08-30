@@ -39,9 +39,6 @@ public class SmartPhoneController {
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<SmartPhone> deleteSmartphone(@PathVariable Long id) {
         Optional<SmartPhone> smartphoneOptional = smartphoneService.findById(id);
-        if (!smartphoneOptional.isPresent()) {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        }
         smartphoneService.remove(id);
         return new ResponseEntity<>(smartphoneOptional.get(), HttpStatus.NO_CONTENT);
     }

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cf0257b0-545a-4f45-86ad-9ab2a6c5c960" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../module3/thi_module_3/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module3/thi_module_3/.idea/thi_module_3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thi_module/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thi_module/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thi_module/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thi_module/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thi_module/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thi_module_5_java/src/main/java/com/example/controller/BenhNhanController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thi_module_5_java/src/main/java/com/example/model/entity/BenhNhan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thi_module_5_java/src/main/java/com/example/model/repository/BenhNhanRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thi_module_5_java/src/main/java/com/example/model/service/IBenhNhanService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thi_module_5_java/src/main/java/com/example/model/service/impl/BenhNhanServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module6/home_prototype/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module6/home_prototype/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module6/home_prototype/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module6/home_prototype/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module6/java_MinhND/src/main/java/com/example/model/entity/ExportBill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module6/java_MinhND/src/main/java/com/example/model/entity/ImportBill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module6/java_MinhND/src/main/java/com/example/model/entity/Manufacturer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/bai1-java-introduction/src/baitap/Chao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/bai1-java-introduction/src/baitap/Chao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module3/thi_module_3/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../module3/thi_module_3/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4/bai_12_jQuery_and_AJAX/baitap/quan_li_dien_thoai/src/main/java/com/example/controller/SmartPhoneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/bai_12_jQuery_and_AJAX/baitap/quan_li_dien_thoai/src/main/java/com/example/controller/SmartPhoneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4/case_study_module4/src/main/java/com/example/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/case_study_module4/src/main/java/com/example/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4/case_study_module4/src/main/resources/templates/customer/list-customer.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/case_study_module4/src/main/resources/templates/customer/list-customer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case-study/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/../case-study/angular.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1wixyppSR0ZACokPqxJepZsHDJ9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cf0257b0-545a-4f45-86ad-9ab2a6c5c960" name="Default Changelist" comment="" />
+      <created>1628955467464</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1628955467464</updated>
+      <workItem from="1628955471064" duration="43000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

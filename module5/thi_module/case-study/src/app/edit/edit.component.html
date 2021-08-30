@@ -1,0 +1,95 @@
+<div class="col-12"><h2 style="text-align: center;color: orange">Edit</h2></div>
+<div class="row">
+
+  <div class="col-12">
+    <form class="container" [formGroup]="patientForm" (ngSubmit)="submit()">
+      <table class="table table-striped">
+        <tr class="row">
+
+          <td class="col-9">
+            <input class="form-control" type="hidden"  name="id" formControlName="id">
+          </td>
+        </tr>
+        <tr class="row">
+          <th class="col-3"><label>Mã Bệnh Nhân </label></th>
+          <td class="col-9">
+            <input class="form-control" readonly type="text" name="name" formControlName="maBenhNhan">
+          </td>
+        </tr>
+        <tr class="row">
+          <th class="col-3"><label>Mã Bệnh Án: </label></th>
+          <td class="col-9">
+            <input class="form-control" readonly type="text" name="maBenhAn" formControlName="maBenhAn">
+          </td>
+        </tr>
+        <tr class="row">
+          <th class="col-3"><label>Tên Bệnh Nhân: </label></th>
+          <td class="col-9">
+            <input class="form-control" type="text" name="idCard" formControlName="tenBenhNhan">
+            <small style="color: red" *ngIf="patientForm.get('tenBenhNhan')?.hasError('required') && patientForm.get('tenBenhNhan')?.touched">Tên Bệnh Nhân
+            không được rỗng</small>
+            <small style="color: red"
+                   *ngIf="patientForm.get('tenBenhNhan')?.hasError('pattern') && patientForm.get('tenBenhNhan')?.touched">Tên Bệnh Nhân không chứa kí tự số</small>
+          </td>
+        </tr>
+        <tr class="row">
+          <th class="col-3"><label>Ngày Nhập Viện: </label></th>
+          <td class="col-9">
+            <input class="form-control" type="date" name="ngayNhapVien" formControlName="ngayNhapVien">
+            <small style="color: red"
+                   *ngIf="patientForm.get('ngayNhapVien')?.hasError('required') && patientForm.get('ngayNhapVien')?.touched">Ngày Nhập Viện
+              không được rỗng</small>
+
+          </td>
+        </tr>
+        <tr class="row">
+          <th class="col-3"><label>Ngày Ra Viện: </label></th>
+          <td class="col-9">
+            <input class="form-control" type="date" name="ngayRaVien" formControlName="ngayRaVien">
+            <small style="color: red"
+                   *ngIf="patientForm.get('ngayRaVien')?.hasError('required') && patientForm.get('ngayRaVien')?.touched">Ngày Ra Viện
+              không được rỗng</small>
+
+          </td>
+        </tr>
+        <tr class="row">
+          <th class="col-3"><label>Lí Do Nhập Viện:</label></th>
+          <td class="col-9">
+            <input class="form-control" type="text" name="liDoNhapVien" formControlName="liDoNhapVien">
+            <small style="color: red"
+                   *ngIf="patientForm.get('liDoNhapVien')?.hasError('required') && patientForm.get('liDoNhapVien')?.touched">Lí Do Nhập Viện
+              không được rỗng</small>
+          </td>
+        </tr>
+        <tr class="row">
+          <th class="col-3"><label>Phương Pháp Điều Trị:</label></th>
+          <td class="col-9">
+            <input class="form-control" type="text" name="address" formControlName="phuongPhapDieuTri">
+            <small style="color: red"
+                   *ngIf="patientForm.get('phuongPhapDieuTri')?.hasError('required') && patientForm.get('phuongPhapDieuTri')?.touched">Phương Pháp Điều Trị
+              không được rỗng</small>
+
+          </td>
+        </tr>
+        <tr class="row">
+          <th class="col-3"><label>Bác Sĩ Điều Trị:</label></th>
+          <td class="col-9">
+            <input class="form-control" type="text" name="bacSiDieuTri" formControlName="bacSiDieuTri">
+            <small style="color: red"
+                   *ngIf="patientForm.get('bacSiDieuTri')?.hasError('required') && patientForm.get('bacSiDieuTri')?.touched">Bác Sĩ Điều Trị
+              không được rỗng</small>
+          </td>
+        </tr>
+        <tr class="row">
+          <th class="col-12 text-center"><input [disabled]="patientForm.invalid" class="btn btn-success col-6"
+                                                type="submit" value="Update">
+            <button mat-dialog-close="" type="button" class="btn btn-secondary col-6" data-dismiss="modal">Close
+            </button>
+          </th>
+        </tr>
+      </table>
+    </form>
+  </div>
+
+</div>
+

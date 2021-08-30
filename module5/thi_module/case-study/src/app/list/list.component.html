@@ -1,0 +1,48 @@
+
+<h1 class="col-lg-12 text-center">Danh Sách Bệnh Nhân</h1>
+
+<table class="table  table-hover m mt-5">
+  <thead>
+  <tr>
+    <th scope="col" >#</th>
+    <th scope="col" (click)="sort('id')">Id Bệnh Nhân <i class="fa fa-sort"></i></th>
+    <th scope="col" (click)="sort('name')">Mã Bệnh Nhân <i class="fa fa-sort"></i></th>
+    <th scope="col">Mã Bệnh Án</th>
+    <th scope="col">Tên Bệnh Nhân</th>
+    <th scope="col">Ngày Nhập Viện</th>
+    <th scope="col">Ngày Ra Viện</th>
+    <th scope="col">Lí Do Nhập Viện</th>
+    <th scope="col">Phương Pháp Điều Tri</th>
+    <th scope="col">Bác Sĩ Điều Trị</th>
+    <th scope="col" colspan="2" class="text-center">Action</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let patient of patients|orderBy:key:a | paginate: config; index as i">
+    <td scope="col"  >{{i + 1}}</td>
+    <td scope="col">{{patient.id}}</td>
+    <td scope="col">{{patient.maBenhNhan}}</td>
+    <td scope="col">{{patient.maBenhAn}}</td>
+    <td scope="col">{{patient.tenBenhNhan}}</td>
+    <td scope="col">{{patient.ngayNhapVien | date: 'dd-MM-yyyy'}}</td>
+    <td scope="col">{{patient.ngayRaVien | date: 'dd-MM-yyyy'}}</td>
+    <td scope="col">{{patient.liDoNhapVien}}</td>
+    <td scope="col">{{patient.phuongPhapDieuTri}}</td>
+    <td scope="col">{{patient.bacSiDieuTri}}</td>
+
+
+    <td scope="col">
+      <button (click)="openDialogEdit(patient.id)" class="btn-warning">Edit</button>
+    </td>
+    <td scope="col">
+      <button (click)="openDialog(patient.id,patient.maBenhNhan)" class="btn-danger">Delete</button>
+    </td>
+  </tr>
+  </tbody>
+</table>
+<pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
+
+
+
+
+

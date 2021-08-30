@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aa63c938-ad0c-4f67-a331-194cd729bf53" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/thi_module_3/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module3/thi_module_3/.idea/thi_module_3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module5/bai5_input_output/.idea/bai5_input_output.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module5/thi_module/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module5/thi_module/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module5/thi_module/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module5/thi_module/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module5/thi_module/.idea/thi_module.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module5/thi_module/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module5/thi_module_5_java/src/main/java/com/example/controller/BenhNhanController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module5/thi_module_5_java/src/main/java/com/example/model/entity/BenhNhan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module5/thi_module_5_java/src/main/java/com/example/model/repository/BenhNhanRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module5/thi_module_5_java/src/main/java/com/example/model/service/IBenhNhanService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module5/thi_module_5_java/src/main/java/com/example/model/service/impl/BenhNhanServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module6/[C0221G1]_Prototype_MinhND/.idea/home_prototype.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module6/home_prototype/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module6/home_prototype/.idea/home_prototype.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module6/home_prototype/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module6/home_prototype/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module6/home_prototype/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module6/java_MinhND/src/main/java/com/example/model/entity/ExportBill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module6/java_MinhND/src/main/java/com/example/model/entity/ImportBill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module6/java_MinhND/src/main/java/com/example/model/entity/Manufacturer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module6/list/.idea/prototype_example.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../module6/list/list/.idea/prototype_example.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../on_giai_thuat_1/.idea/on_giai_thuat_1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../bai1-java-introduction/src/baitap/Chao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../bai1-java-introduction/src/baitap/Chao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../bai8-clean_code-refactoring/bai8-clean_code-refactoring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../bai8-clean_code-refactoring/bai8-clean_code-refactoring.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../bai8-clean_code-refactoring/src/baitap/TennisGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../bai8-clean_code-refactoring/src/baitap/TennisGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module3/thi_module_3/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module3/thi_module_3/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module4/bai_12_jQuery_and_AJAX/baitap/quan_li_dien_thoai/src/main/java/com/example/controller/SmartPhoneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module4/bai_12_jQuery_and_AJAX/baitap/quan_li_dien_thoai/src/main/java/com/example/controller/SmartPhoneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module4/case_study_module4/src/main/java/com/example/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module4/case_study_module4/src/main/java/com/example/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module4/case_study_module4/src/main/resources/templates/customer/list-customer.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module4/case_study_module4/src/main/resources/templates/customer/list-customer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module5/bai8_connet_BE/thuchanh/angular-product-management/src/app/product/product-list/product-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module5/bai8_connet_BE/thuchanh/angular-product-management/src/app/product/product-list/product-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module5/case-study/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module5/case-study/angular.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="ProjectId" id="1wzC2EJBzvF9d9qFHejGSPb1swQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../thi_module2" />
+    <property name="settings.editor.selected.configurable" value="experimental" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aa63c938-ad0c-4f67-a331-194cd729bf53" name="Default Changelist" comment="" />
+      <created>1629451820438</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1629451820438</updated>
+      <workItem from="1629451822034" duration="29000" />
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="273" key="FileChooserDialogImpl" timestamp="1629451852671">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="273" key="FileChooserDialogImpl/-1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1629451852671" />
+  </component>
+</project>

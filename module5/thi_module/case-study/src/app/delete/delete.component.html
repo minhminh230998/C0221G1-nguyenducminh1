@@ -1,0 +1,8 @@
+<div class="col-12"><h2 style="text-align: center;color: red" >Delete</h2></div>
+<div class="modal-body">
+  <p>Bạn có muốn xóa bệnh nhân này: {{data.maBenhNhan}}???</p>
+</div>
+<div class="modal-footer">
+  <button mat-dialog-close="" (click)="delete(data.id)" type="button" class="btn btn-primary">Delete </button>
+  <button  mat-dialog-close="" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+</div>

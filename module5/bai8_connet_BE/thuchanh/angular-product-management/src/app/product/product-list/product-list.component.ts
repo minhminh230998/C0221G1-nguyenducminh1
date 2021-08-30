@@ -10,7 +10,7 @@ import {DeleteComponent} from "../delete/delete.component";
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
-  products: Product[]
+  products: Product[];
 
   constructor(private productService: ProductService,private dialog:MatDialog) {
     this.productService.getAll().subscribe(product => {

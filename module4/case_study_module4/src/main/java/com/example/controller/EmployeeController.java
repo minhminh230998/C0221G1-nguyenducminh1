@@ -117,7 +117,7 @@ public class EmployeeController {
         return "/employee/update-user";
     }
     @PostMapping(value = "/updateUser")
-    public String updateUser(@ModelAttribute  AppUser appUser, RedirectAttributes redirectAttributes, Model model){
+    public String updateUser(@ModelAttribute  AppUser appUser, RedirectAttributes redirectAttributes){
 
         appUser.setEncrytedPassword(EncrytedPasswordUtils.encrytePassword(appUser.getEncrytedPassword()));
         userDetailsService.addAppUser1(appUser);

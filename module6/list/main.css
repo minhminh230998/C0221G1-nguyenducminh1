@@ -1,0 +1,47 @@
+*{
+    font-size: 14px;
+}
+.label-text{
+    min-width: 100px;
+}
+
+.label-text-min{
+    min-width: 20%;
+}
+.select{
+    min-width: 50%;
+}
+.vien{
+    max-width: 40px;
+}
+#form{
+    width: 60%;
+    margin: auto;
+    box-shadow: 3px 3px 3px 3px #5f6062;
+}
+.icon{
+    padding: 10px 10px 0 0;
+}
+#content {
+    box-shadow: 3px 3px 3px 3px #5f6062;
+}
+.thead{
+    color: white;
+    background-color: #567FEA;
+}
+input{
+    padding-left: 10px;
+    border-radius: 4px;
+    outline: none;
+    padding-bottom: 3px;
+}
+.ve{
+    background-color: #567FEA;
+    color: white;
+}
+.date{
+    padding-right: 16px;
+}
+.huy{
+    min-width: 76px;
+}
